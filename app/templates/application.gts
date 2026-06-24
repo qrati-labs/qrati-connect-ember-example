@@ -1,12 +1,10 @@
 import { pageTitle } from 'ember-page-title';
-import { WelcomePage } from 'ember-welcome-page';
+import QratiDemo from 'qrati-connect-ember-example/components/qrati-demo';
 
 <template>
-  {{pageTitle "QratiConnectEmberExample"}}
+  {{pageTitle "Qrati Connect — Ember Example"}}
+
+  <QratiDemo />
 
   {{outlet}}
-
-  {{! The following component displays Ember's default welcome message. }}
-  <WelcomePage @extension="gts" />
-  {{! Feel free to remove this! }}
 </template>

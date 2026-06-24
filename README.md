@@ -1,54 +1,42 @@
-# qrati-connect-ember-example
+# Qrati Connect — Ember Example
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Embeds [Qrati Connect](https://qrati.com) into a Ember app using the no-code
+**embed script**, with a host-controlled light/dark theme and a demo login for
+organizations that use custom auth.
 
-## Prerequisites
+## Integration method: Embed script
 
-You will need the following things properly installed on your computer.
+A single `async` script tag mounts the widget where it sits; config travels in
+`data-*` attributes:
 
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/) (with npm)
-- [Google Chrome](https://google.com/chrome/)
+```html
+<script async
+  src="https://cdn.jsdelivr.net/npm/@qratilabs/qrati-connect/embed/embed.js"
+  data-organization-id="your-org-id"
+  data-router="hash"></script>
+```
 
-## Installation
+After sign-in this example injects that tag (see `app/components/qrati-demo.gts`), adding
+`data-uid` / `data-fname` / `data-lname` for the known user.
 
-- `git clone <repository-url>` this repository
-- `cd qrati-connect-ember-example`
-- `npm install`
+## Run it
 
-## Running / Development
+```bash
+bun install
+bun start
+```
 
-- `npm run start`
-- Visit your app at [http://localhost:4200](http://localhost:4200).
-- Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+## Configuration
 
-### Code Generators
+| Variable                 | Description                                                       |
+| ------------------------ | ----------------------------------------------------------------- |
+| `VITE_ORGANIZATION_ID`   | Your Qrati organization ID                                        |
+| `VITE_QRATI_EMBED_URL`   | CDN URL of the embed script (`embed/embed.js`)                     |
+| `VITE_API_ENDPOINT`      | Demo-login endpoint for custom-auth orgs. Leave empty to skip it. |
 
-Make use of the many generators for code, try `npm exec ember help generate` for more details
+## Other integration methods
 
-### Running Tests
+- **React component** — `import { QratiConnect }` (see the React / Next / Preact examples).
+- **Web component** — `<qrati-connect>` from the CDN (see the Svelte / Solid / Qwik / Lit examples).
 
-- `npm run test`
-
-### Linting
-
-- `npm run lint`
-- `npm run lint:fix`
-
-### Building
-
-- `npm exec vite build --mode development` (development)
-- `npm run build` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-- [ember.js](https://emberjs.com/)
-- [Vite](https://vite.dev)
-- Development Browser Extensions
-  - [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  - [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+Docs: <https://www.npmjs.com/package/@qratilabs/qrati-connect>
