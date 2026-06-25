@@ -6,7 +6,7 @@ import { modifier } from 'ember-modifier';
 
 const ORG = import.meta.env.VITE_ORGANIZATION_ID || '69ad9c7876d8bf6f864b3a65';
 const EMBED_URL =
-  import.meta.env.VITE_QRATI_EMBED_URL ||
+  import.meta.env.VITE_CDN_URL ||
   'https://cdn.jsdelivr.net/npm/@qratilabs/qrati-connect/embed/embed.js';
 const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT || '';
 const STORAGE_KEY = 'qc_demo_user';

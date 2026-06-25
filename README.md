@@ -31,7 +31,7 @@ bun start
 | Variable                 | Description                                                       |
 | ------------------------ | ----------------------------------------------------------------- |
 | `VITE_ORGANIZATION_ID`   | Your Qrati organization ID                                        |
-| `VITE_QRATI_EMBED_URL`   | CDN URL of the embed script (`embed/embed.js`)                     |
+| `VITE_CDN_URL`   | CDN URL of the embed script (`embed/embed.js`)                     |
 | `VITE_API_ENDPOINT`      | Demo-login endpoint for custom-auth orgs. Leave empty to skip it. |
 
 ## Other integration methods
