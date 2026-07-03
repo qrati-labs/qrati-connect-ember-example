@@ -1,8 +1,7 @@
 # Qrati Connect — Ember Example
 
 Embeds [Qrati Connect](https://qrati.com) into a Ember app using the no-code
-**embed script**, with a host-controlled light/dark theme and a demo login for
-organizations that use custom auth.
+**embed script**, with a host-controlled light/dark theme.
 
 ## Integration method: Embed script
 
@@ -16,8 +15,7 @@ A single `async` script tag mounts the widget where it sits; config travels in
   data-router="hash"></script>
 ```
 
-After sign-in this example injects that tag (see `app/components/qrati-demo.gts`), adding
-`data-uid` / `data-fname` / `data-lname` for the known user.
+This example injects that tag with the current theme (see `app/components/qrati-demo.gts`).
 
 ## Run it
 
@@ -32,7 +30,6 @@ bun start
 | ------------------------ | ----------------------------------------------------------------- |
 | `VITE_ORGANIZATION_ID`   | Your Qrati organization ID                                        |
 | `VITE_QRATI_EMBED_URL`   | CDN URL of the embed script (`embed/embed.js`)                     |
-| `VITE_API_ENDPOINT`      | Demo-login endpoint for custom-auth orgs. Leave empty to skip it. |
 
 ## Other integration methods
 
