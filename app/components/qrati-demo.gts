@@ -7,7 +7,7 @@ import type Owner from '@ember/owner';
 
 const ORG = import.meta.env.VITE_ORGANIZATION_ID || '69ad9c7876d8bf6f864b3a65';
 const EMBED_URL =
-  import.meta.env.VITE_QRATI_EMBED_URL ||
+  import.meta.env.VITE_CDN_URL ||
   'https://cdn.jsdelivr.net/npm/@qratilabs/qrati-connect/embed/embed.js';
 const GITHUB_ORG = 'qrati-labs';
 const REPO = 'qrati-connect-ember-example';

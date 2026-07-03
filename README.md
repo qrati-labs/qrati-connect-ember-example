@@ -26,10 +26,10 @@ bun start
 
 ## Configuration
 
-| Variable                 | Description                                                       |
-| ------------------------ | ----------------------------------------------------------------- |
-| `VITE_ORGANIZATION_ID`   | Your Qrati organization ID                                        |
-| `VITE_QRATI_EMBED_URL`   | CDN URL of the embed script (`embed/embed.js`)                     |
+| Variable               | Description                                    |
+| ---------------------- | ---------------------------------------------- |
+| `VITE_ORGANIZATION_ID` | Your Qrati organization ID                     |
+| `VITE_QRATI_EMBED_URL` | CDN URL of the embed script (`embed/embed.js`) |
 
 ## Other integration methods
 
