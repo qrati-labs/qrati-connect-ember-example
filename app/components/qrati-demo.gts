@@ -8,62 +8,25 @@ const ORG = import.meta.env.VITE_ORGANIZATION_ID || '69ad9c7876d8bf6f864b3a65';
 const EMBED_URL =
   import.meta.env.VITE_CDN_URL ||
   'https://cdn.jsdelivr.net/npm/@qratilabs/qrati-connect/embed/embed.js';
-const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT || '';
-const STORAGE_KEY = 'qc_demo_user';
 const GITHUB_ORG = 'qrati-labs';
 const REPO = 'qrati-connect-ember-example';
 
-interface AuthUser {
-  userId: string;
-  email: string;
-  fname: string;
-  lname: string;
-}
-
-function loadUser(): AuthUser | null {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? (JSON.parse(raw) as AuthUser) : null;
-  } catch {
-    return null;
-  }
-}
-
-async function hashEmail(email: string): Promise<string> {
-  const data = new TextEncoder().encode(email.toLowerCase().trim());
-  const buf = await crypto.subtle.digest('SHA-256', data);
-  return Array.from(new Uint8Array(buf))
-    .map((b) => b.toString(16).padStart(2, '0'))
-    .join('')
-    .slice(0, 16);
-}
-
-// Re-injects the embed script whenever the user or theme changes.
-const mountEmbed = modifier(
-  (element: HTMLElement, [user, theme]: [AuthUser, string]) => {
-    element.innerHTML = '';
-    const s = document.createElement('script');
-    s.async = true;
-    s.src = EMBED_URL;
-    s.dataset.organizationId = ORG;
-    s.dataset.router = 'hash';
-    s.dataset.theme = theme;
-    s.dataset.uid = user.userId;
-    s.dataset.fname = user.fname;
-    s.dataset.lname = user.lname;
-    element.appendChild(s);
-  },
-);
+// Re-injects the embed script whenever the theme changes.
+const mountEmbed = modifier((element: HTMLElement, [theme]: [string]) => {
+  element.innerHTML = '';
+  const s = document.createElement('script');
+  s.async = true;
+  s.src = EMBED_URL;
+  s.dataset.organizationId = ORG;
+  s.dataset.router = 'hash';
+  s.dataset.theme = theme;
+  element.appendChild(s);
+});
 
 export default class QratiDemo extends Component {
   @tracked theme: 'light' | 'dark' =
     (localStorage.getItem('qc-theme') as 'light' | 'dark') ||
     (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-  @tracked user: AuthUser | null = loadUser();
-  @tracked email = '';
-  @tracked name = '';
-  @tracked loading = false;
-  @tracked error = '';
 
   repoUrl = `https://github.com/${GITHUB_ORG}/${REPO}`;
   vscodeUrl = `https://vscode.dev/github/${GITHUB_ORG}/${REPO}`;
@@ -81,57 +44,6 @@ export default class QratiDemo extends Component {
     localStorage.setItem('qc-theme', this.theme);
   }
 
-  @action
-  updateName(e: Event) {
-    this.name = (e.target as HTMLInputElement).value;
-  }
-
-  @action
-  updateEmail(e: Event) {
-    this.email = (e.target as HTMLInputElement).value;
-  }
-
-  @action
-  async handleSubmit(e: Event) {
-    e.preventDefault();
-    if (!this.email.trim() || !this.name.trim()) {
-      this.error = 'Email and name are required.';
-      return;
-    }
-    this.loading = true;
-    this.error = '';
-    try {
-      const userId = await hashEmail(this.email.trim());
-      const [fname, ...rest] = this.name.trim().split(/\s+/);
-      const user: AuthUser = { userId, email: this.email.trim(), fname: fname || '', lname: rest.join(' ') };
-      if (API_ENDPOINT) {
-        try {
-          await fetch(API_ENDPOINT, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: user.email, name: this.name.trim(), userId }),
-          });
-        } catch (err) {
-          console.error('demo-login failed:', err);
-        }
-      }
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(user));
-      this.user = user;
-    } catch {
-      this.error = 'Login failed. Try again.';
-    } finally {
-      this.loading = false;
-    }
-  }
-
-  @action
-  handleLogout() {
-    localStorage.removeItem(STORAGE_KEY);
-    this.user = null;
-    this.email = '';
-    this.name = '';
-  }
-
   <template>
     <button class="theme-toggle" type="button" {{on "click" this.toggleTheme}} aria-label="Toggle theme">
       {{if this.isDark "☀ Light" "🌙 Dark"}}
@@ -147,8 +59,7 @@ export default class QratiDemo extends Component {
           <p class="hero-copy">
             This example shows how to embed
             <a href="https://qrati.com" target="_blank" rel="noopener noreferrer">Qrati</a> Connect into an
-            Ember app using the no-code <strong>embed script</strong>, with a host-controlled theme and a
-            demo login for organizations that use custom auth.
+            Ember app using the no-code <strong>embed script</strong>, with a host-controlled theme.
           </p>
           <div class="action-pills" aria-label="Example links">
             <a href={{this.repoUrl}} target="_blank" rel="noopener noreferrer">
@@ -163,32 +74,7 @@ export default class QratiDemo extends Component {
         </header>
 
         <main class="content-shell">
-          {{#if this.user}}
-            <div class="session-bar">
-              <span>Signed in as <strong>{{this.user.fname}} {{this.user.lname}}</strong> ({{this.user.email}})</span>
-              <button class="btn-ghost" type="button" {{on "click" this.handleLogout}}>Log out</button>
-            </div>
-            <div class="widget-frame" {{mountEmbed this.user this.theme}}></div>
-          {{else}}
-            <div class="login-card">
-              <h2>Demo sign in</h2>
-              <p class="sub">Identify yourself to load the widget as a known user.</p>
-              <form class="login-form" {{on "submit" this.handleSubmit}}>
-                <div class="field">
-                  <label for="name">Full name</label>
-                  <input id="name" type="text" value={{this.name}} {{on "input" this.updateName}} placeholder="John Doe" autocomplete="name" />
-                </div>
-                <div class="field">
-                  <label for="email">Email</label>
-                  <input id="email" type="email" value={{this.email}} {{on "input" this.updateEmail}} placeholder="john@example.com" autocomplete="email" />
-                </div>
-                {{#if this.error}}<p class="error">{{this.error}}</p>{{/if}}
-                <button class="btn-primary" type="submit" disabled={{this.loading}}>
-                  {{if this.loading "Signing in…" "Sign in & load widget"}}
-                </button>
-              </form>
-            </div>
-          {{/if}}
+          <div class="widget-frame" {{mountEmbed this.theme}}></div>
         </main>
 
         <footer class="footer">
