@@ -3,6 +3,7 @@ import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
 import { on } from '@ember/modifier';
 import { modifier } from 'ember-modifier';
+import type Owner from '@ember/owner';
 
 const ORG = import.meta.env.VITE_ORGANIZATION_ID || '69ad9c7876d8bf6f864b3a65';
 const EMBED_URL =
@@ -32,7 +33,7 @@ export default class QratiDemo extends Component {
   vscodeUrl = `https://vscode.dev/github/${GITHUB_ORG}/${REPO}`;
   year = new Date().getFullYear();
 
-  constructor(owner: unknown, args: object) {
+  constructor(owner: Owner, args: object) {
     super(owner, args);
     document.documentElement.setAttribute('data-theme', this.theme);
   }
