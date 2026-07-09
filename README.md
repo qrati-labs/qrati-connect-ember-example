@@ -12,10 +12,12 @@ A single `async` script tag mounts the widget where it sits; config travels in
 `data-*` attributes:
 
 ```html
-<script async
+<script
+  async
   src="https://cdn.jsdelivr.net/npm/@qratilabs/qrati-connect/embed/embed.js"
   data-organization-id="your-org-id"
-  data-router="hash"></script>
+  data-router="hash"
+></script>
 ```
 
 See `app/components/qrati-demo.gts` — the script tag is re-injected whenever
@@ -24,15 +26,15 @@ the theme toggle changes, since scripts don't react to attribute mutation.
 ## Run it
 
 ```bash
-bun install
-bun start
+pnpm install
+pnpm start
 ```
 
 ## Configuration
 
-| Variable               | Description                             |
-| ---------------------- | -----------------------------------------|
-| `VITE_ORGANIZATION_ID` | Your Qrati organization ID              |
+| Variable               | Description                                    |
+| ---------------------- | ---------------------------------------------- |
+| `VITE_ORGANIZATION_ID` | Your Qrati organization ID                     |
 | `VITE_CDN_URL`         | CDN URL of the embed script (`embed/embed.js`) |
 
 ## Other integration methods

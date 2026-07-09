@@ -2,6 +2,7 @@
   "name": "qrati-connect-ember-example",
   "version": "0.0.0",
   "private": true,
+  "packageManager": "pnpm@11.1.3",
   "description": "Small description for qrati-connect-ember-example goes here",
   "repository": "",
   "license": "MIT",
@@ -94,7 +95,7 @@
     "vite": "7.3.1"
   },
   "engines": {
-    "node": ">= 20"
+    "node": ">= 22"
   },
   "ember": {
     "edition": "octane"
