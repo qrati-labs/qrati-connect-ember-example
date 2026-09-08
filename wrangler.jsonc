@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "qrati-connect-ember-example",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-07-06",
+  "routes": [{ "pattern": "*qrati.com/connect/ember-example*", "zone_name": "qrati.com" }],
+  "assets": { "directory": "./dist", "binding": "ASSETS" },
+  "compatibility_flags": ["nodejs_compat"]
+}
