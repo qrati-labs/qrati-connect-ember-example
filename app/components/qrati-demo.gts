@@ -4,6 +4,7 @@ import { action } from '@ember/object';
 import { on } from '@ember/modifier';
 import { modifier } from 'ember-modifier';
 import type Owner from '@ember/owner';
+import * as CookieConsent from 'vanilla-cookieconsent';
 
 const ORG = import.meta.env.VITE_ORGANIZATION_ID || '69ad9c7876d8bf6f864b3a65';
 const EMBED_URL =
@@ -38,12 +39,15 @@ export default class QratiDemo extends Component {
   constructor(owner: Owner, args: object) {
     super(owner, args);
     document.documentElement.setAttribute('data-theme', this.theme);
+    document.documentElement.classList.toggle('dark', this.theme === 'dark');
+    void CookieConsent.run({ categories: { necessary: { enabled: true, readOnly: true }, analytics: {} }, language: { default: 'en', translations: { en: { consentModal: { title: 'We use cookies', description: 'Essential cookies keep this example working. Analytics cookies are optional.', acceptAllBtn: 'Accept all', acceptNecessaryBtn: 'Reject analytics', showPreferencesBtn: 'Manage preferences' }, preferencesModal: { title: 'Cookie preferences', acceptAllBtn: 'Accept all', acceptNecessaryBtn: 'Reject analytics', savePreferencesBtn: 'Save preferences', closeIconLabel: 'Close', sections: [] } } } } });
   }
 
   @action
   toggleTheme() {
     this.theme = this.theme === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', this.theme);
+    document.documentElement.classList.toggle('dark', this.theme === 'dark');
     localStorage.setItem('qc-theme', this.theme);
   }
 
@@ -114,7 +118,10 @@ export default class QratiDemo extends Component {
         </header>
 
         <main class="content-shell">
-          <div class="widget-frame" {{mountEmbed this.theme}}></div>
+          <section class="widget-frame" aria-label="Interactive Ember Event Gallery" {{mountEmbed this.theme}}><h2 class="sr-only">Live Event Photo Gallery Component</h2></section>
+          <section class="seo-section"><p class="seo-kicker">Event Gallery Features</p><h2>Why Developers Choose Qrati Connect</h2><div class="seo-features-grid"><article class="seo-feature-card"><h3>🖼️ Live Event Photo Wall</h3><p>Responsive masonry gallery and full-screen lightbox.</p></article><article class="seo-feature-card"><h3>📸 Guest Media Uploads</h3><p>QR uploads with compression and HEIC conversion.</p></article><article class="seo-feature-card"><h3>⭐ Reactions &amp; Contests</h3><p>Reactions, ratings, and live rankings.</p></article><article class="seo-feature-card"><h3>⚡ Native Embed</h3><p>Ember hosts the same framework-agnostic embed.</p></article></div></section>
+          <section class="seo-section"><p class="seo-kicker">Common Questions</p><h2>Frequently Asked Questions</h2><div class="faq-list"><details open><summary>How do I embed an event photo gallery in Ember?</summary><p>Load the embed script and render it with your organization ID.</p></details><details><summary>Can attendees upload photos?</summary><p>Yes, when uploads are enabled in Qrati.</p></details><details><summary>How does Ember handle theme sync?</summary><p>Tracked state remounts the embed with the selected theme.</p></details><details><summary>Does it support dark mode?</summary><p>Yes. Set light or dark.</p></details><details><summary>Can I run photo contests?</summary><p>Yes. Rankings and reactions are supported.</p></details></div></section>
+          <section class="seo-section seo-cta-section"><h2>Host Your Event on Qrati. <span class="cta-highlight">Stream the Live Gallery on Your Website.</span></h2><a class="btn-cta-primary" href="https://qrati.com">Host Your Event on Qrati →</a></section>
         </main>
 
         <footer class="footer">
