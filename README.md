@@ -1,5 +1,9 @@
 # Qrati Connect — Ember Example
 
+[![Qrati Connect — embeddable event photo galleries](public/qrati-connect-og.png)](https://qrati.com/connect)
+
+Embed a live event photo gallery in Ember with guest uploads, full-screen lightbox, emoji reactions, and photo-contest rankings. [Explore Qrati Connect](https://qrati.com/connect) or [view the live Ember example](https://qrati.com/connect/ember-example).
+
 Embeds [Qrati Connect](https://qrati.com) into an Ember app using the no-code
 **embed script**, with a host-controlled light/dark theme. The demo org used
 here is configured for custom storage on the Qrati backend — that's a
