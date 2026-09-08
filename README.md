@@ -34,13 +34,6 @@ pnpm install
 pnpm start
 ```
 
-## Configuration
-
-| Variable               | Description                                    |
-| ---------------------- | ---------------------------------------------- |
-| `VITE_ORGANIZATION_ID` | Your Qrati organization ID                     |
-| `VITE_CDN_URL`         | CDN URL of the embed script (`embed/embed.js`) |
-
 ## Other integration methods
 
 - **React component** — `import { QratiConnect }` (see the React / Next / Preact examples).
