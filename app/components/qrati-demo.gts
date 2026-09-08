@@ -4,9 +4,9 @@ import { action } from '@ember/object';
 import { on } from '@ember/modifier';
 import { modifier } from 'ember-modifier';
 import type Owner from '@ember/owner';
-import * as CookieConsent from 'vanilla-cookieconsent';
+import { initCookieConsent } from '../lib/cookieConsent';
 
-const ORG = import.meta.env.VITE_ORGANIZATION_ID || '69ad9c7876d8bf6f864b3a65';
+const ORG = import.meta.env.VITE_ORGANIZATION_ID || '';
 const EMBED_URL =
   import.meta.env.VITE_CDN_URL ||
   'https://cdn.jsdelivr.net/npm/@qratilabs/qrati-connect/embed/embed.js';
@@ -40,7 +40,7 @@ export default class QratiDemo extends Component {
     super(owner, args);
     document.documentElement.setAttribute('data-theme', this.theme);
     document.documentElement.classList.toggle('dark', this.theme === 'dark');
-    void CookieConsent.run({ categories: { necessary: { enabled: true, readOnly: true }, analytics: {} }, language: { default: 'en', translations: { en: { consentModal: { title: 'We use cookies', description: 'Essential cookies keep this example working. Analytics cookies are optional.', acceptAllBtn: 'Accept all', acceptNecessaryBtn: 'Reject analytics', showPreferencesBtn: 'Manage preferences' }, preferencesModal: { title: 'Cookie preferences', acceptAllBtn: 'Accept all', acceptNecessaryBtn: 'Reject analytics', savePreferencesBtn: 'Save preferences', closeIconLabel: 'Close', sections: [] } } } } });
+    initCookieConsent();
   }
 
   @action
