@@ -1,6 +1,6 @@
 # BugHunter audit: Ember cookie-consent workflow recheck
 
-- **UTC:** 2026-10-16 12:21:38–12:23:00
+- **UTC:** 2026-10-16 12:21:38–12:23:35
 - **Repository/base:** `qrati-connect-ember-example`, `origin/main` at `5f305b6c82156561862112bfa50d11d0bf8748d8`
 - **Run ID:** `20261016T122138Z-84793b32a99649c4a43dff5f6f9a879e`
 - **Scope:** Geo consent decision → CookieConsent initialization → GTM consent synchronization and script insertion.
@@ -28,8 +28,8 @@ GitHub PR #1 (`https://github.com/qrati-labs/qrati-connect-ember-example/pull/1`
 
 - Preflight (injected): 00:00:21, 12:21:38Z–12:21:59Z.
 - Audit/worktree/source/PR overlap examination: approximately 12:21:59Z–12:23:00Z; phase timing is bounded by tool timestamps, not a continuous stopwatch.
-- Total measured from injected start through this report: 00:01:22 (12:21:38Z–12:23:00Z).
+- Total measured from injected start through PR read-back and report timing update: 00:01:57 (12:21:38Z–12:23:35Z).
 
 ## PR state
 
-Report-only PR to be opened. No issue link/closing reference applies. Checks will be read once after PR creation.
+Report-only PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/2. Read-back verified base `main` at `5f305b6c82156561862112bfa50d11d0bf8748d8`, head `f3f910c85aef39d684933b1ccac087b5922e1590`, both report/index paths, report-only body, and no closing issue references. Merge state was `UNSTABLE`. The sole observed PR check, Cloudflare Workers Build, was `IN_PROGRESS`; no other PR checks were returned. No merge or deployment.
