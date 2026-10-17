@@ -18,13 +18,14 @@ No reachable failure or violated invariant was established in this bounded route
 ## PR, checks, and tests
 
 - Issue: none (no confirmed defect).
-- PR: to be recorded after creation/readback.
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/3 (base `main` at `5f305b6c82156561862112bfa50d11d0bf572346`; head `8f650902c79c39e7459c119bd259a3fcf47bae3c`). Readback confirmed the two expected documentation files, no closing-issue references, and mergeable status.
 - Tests authored: none; no confirmed defect warranted a regression test.
 - Tests/build/lint/type-check: **NOT RUN BY BUGHUNTER** (execution boundary).
 - Patch hygiene: `git diff --check` checked; no whitespace errors were reported.
-- CI: not yet observed; record PR checks after opening.
+- CI observed at `2026-10-17T07:35:30Z`: Lint and Test queued; GitGuardian and Cloudflare Workers Builds in progress. No result yet.
 
 ## Timing
 
 - Audit started: `2026-10-17T07:33:08Z` (`12:03:08 IST`).
-- Audit end and measured elapsed time: to be recorded after PR readback; phase durations are not asserted because phase-boundary timestamps were not captured.
+- Phase breakdown: phase-boundary timestamps were not captured, so no phase durations are asserted.
+- End/elapsed: recorded in the final PR report after verified PR readback.
