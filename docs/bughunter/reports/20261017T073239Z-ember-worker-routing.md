@@ -18,7 +18,7 @@ No reachable failure or violated invariant was established in this bounded route
 ## PR, checks, and tests
 
 - Issue: none (no confirmed defect).
-- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/3 (base `main` at `5f305b6c82156561862112bfa50d11d0bf572346`). Latest readback showed the two expected documentation files and no closing-issue references. Mergeability is currently `UNKNOWN`; checks were not returned in the latest readback (an earlier readback showed Lint/Test queued and GitGuardian/Cloudflare Builds in progress at `2026-10-17T07:35:30Z`).
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/3 (base `main` at `5f305b6c82156561862112bfa50d11d0bf572346`). Readback confirmed the two expected documentation files, no closing-issue references, and `MERGEABLE` status. At the latest check readback, GitGuardian succeeded; Lint/Test had not returned results.
 - Tests authored: none; no confirmed defect warranted a regression test.
 - Tests/build/lint/type-check: **NOT RUN BY BUGHUNTER** (execution boundary).
 - Patch hygiene: `git diff --check` checked; no whitespace errors were reported.
@@ -26,5 +26,5 @@ No reachable failure or violated invariant was established in this bounded route
 ## Timing
 
 - Audit started: `2026-10-17T07:33:08Z` (`12:03:08 IST`).
-- End of verified PR readback: `2026-10-17T07:35:47Z` (`12:05:47 IST`); elapsed **2m 39s**.
+- End of verified PR readback: `2026-10-17T07:36:03Z` (`12:06:03 IST`); elapsed **2m 55s**.
 - Phase breakdown: phase-boundary timestamps were not captured, so no phase durations are asserted.
