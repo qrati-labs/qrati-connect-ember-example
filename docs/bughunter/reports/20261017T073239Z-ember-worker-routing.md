@@ -18,13 +18,13 @@ No reachable failure or violated invariant was established in this bounded route
 ## PR, checks, and tests
 
 - Issue: none (no confirmed defect).
-- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/3 (base `main` at `5f305b6c82156561862112bfa50d11d0bf572346`). Readback confirmed the two expected documentation files, no closing-issue references, and `MERGEABLE` status. At the latest check readback, GitGuardian succeeded; Lint/Test had not returned results.
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/3 (base `main` at `5f305b6c82156561862112bfa50d11d0bf572346`). Readback confirmed the report and index files, no closing-issue references, and `MERGEABLE` status. On the prior head, CI Lint and Test failed before execution because `actions/setup-node` was configured for npm caching but the repository has `pnpm-lock.yaml` and no supported npm/yarn lockfile (`gh run view 39014239164 --log-failed`). On the current head, Lint/Test were queued and GitGuardian was in progress at last readback; result pending.
 - Tests authored: none; no confirmed defect warranted a regression test.
-- Tests/build/lint/type-check: **NOT RUN BY BUGHUNTER** (execution boundary).
+- Tests/build/lint/type-check: **NOT RUN BY BUGHUNTER** (execution boundary); the observed CI failures occurred at dependency setup, before tests or lint.
 - Patch hygiene: `git diff --check` checked; no whitespace errors were reported.
 
 ## Timing
 
 - Audit started: `2026-10-17T07:33:08Z` (`12:03:08 IST`).
-- End of verified PR readback: `2026-10-17T07:36:03Z` (`12:06:03 IST`); elapsed **2m 55s**.
+- End of verified PR readback: `2026-10-17T07:36:26Z` (`12:06:26 IST`); elapsed **3m 18s**.
 - Phase breakdown: phase-boundary timestamps were not captured, so no phase durations are asserted.
