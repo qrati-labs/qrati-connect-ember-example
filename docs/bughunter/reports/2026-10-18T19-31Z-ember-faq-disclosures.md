@@ -26,13 +26,13 @@ This was a source-level review of the static disclosure markup, not a browser/E2
 ## Timing
 
 - Run start: **2026-10-18 19:31:39 UTC** (2026-10-19 01:01:39 IST)
-- Final PR read-back: **2026-10-18 19:33:28 UTC** (2026-10-19 01:03:28 IST)
-- Total: **00:01:49** (00:01:49 IST)
+- PR and remote-artifact verification: **2026-10-18 19:33:43 UTC** (2026-10-19 01:03:43 IST)
+- Total: **00:02:04** (00:02:04 IST)
 - Preflight (provided by scheduler): **00:00:23**
 - Source review and route selection were not separately instrumented; durations are not estimated.
 
 ## Delivery
 
 - Issue: not applicable (no confirmed finding).
-- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/8 — open and mergeable; base `main` at `5f305b6c82156561862112bfa50d11d0bf8748d8`; head `84aec55dec849a790742e20b3580450d704ba70b` at initial read-back. Docs-only files: this report and `docs/bughunter/INDEX.md`.
-- Checks at initial read-back: Lint queued, Test queued, Cloudflare Workers build in progress. No completed CI result observed. BugHunter did not run tests, builds, lint, type-check, or package managers.
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/8 — open and mergeable; base `main` at `5f305b6c82156561862112bfa50d11d0bf8748d8`; verified head `06833118c266619b2f6db9112a5371d62d978c16`. Docs-only files: this report and `docs/bughunter/INDEX.md`.
+- Checks at latest read-back: none reported. Earlier read-back showed Lint/Test queued and Cloudflare Workers build in progress; no completed CI result was observed. BugHunter did not run tests, builds, lint, type-check, or package managers.
