@@ -26,12 +26,13 @@ This was a source-level review of the static disclosure markup, not a browser/E2
 ## Timing
 
 - Run start: **2026-10-18 19:31:39 UTC** (2026-10-19 01:01:39 IST)
+- Final PR read-back: **2026-10-18 19:33:28 UTC** (2026-10-19 01:03:28 IST)
+- Total: **00:01:49** (00:01:49 IST)
 - Preflight (provided by scheduler): **00:00:23**
-- Total review and delivery: recorded at final PR read-back; see final report.
-- Other phase durations: not separately instrumented; not estimated.
+- Source review and route selection were not separately instrumented; durations are not estimated.
 
 ## Delivery
 
 - Issue: not applicable (no confirmed finding).
-- PR: to be recorded after creation and read-back.
-- CI/check state: to be recorded after PR read-back.
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/8 — open and mergeable; base `main` at `5f305b6c82156561862112bfa50d11d0bf8748d8`; head `84aec55dec849a790742e20b3580450d704ba70b` at initial read-back. Docs-only files: this report and `docs/bughunter/INDEX.md`.
+- Checks at initial read-back: Lint queued, Test queued, Cloudflare Workers build in progress. No completed CI result observed. BugHunter did not run tests, builds, lint, type-check, or package managers.
