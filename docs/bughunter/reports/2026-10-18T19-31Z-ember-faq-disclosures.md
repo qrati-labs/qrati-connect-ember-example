@@ -26,13 +26,13 @@ This was a source-level review of the static disclosure markup, not a browser/E2
 ## Timing
 
 - Run start: **2026-10-18 19:31:39 UTC** (2026-10-19 01:01:39 IST)
-- PR and remote-artifact verification: **2026-10-18 19:34:29 UTC** (2026-10-19 01:04:29 IST)
-- Total: **00:02:50** (00:02:50 IST) through the final PR/check read-back.
+- PR and remote-artifact verification: **2026-10-18 19:35:01 UTC** (2026-10-19 01:05:01 IST)
+- Total: **00:03:22** (00:03:22 IST) through the final recorded CI-status snapshot.
 - Preflight (provided by scheduler): **00:00:23**
 - Source review and route selection were not separately instrumented; durations are not estimated.
 
 ## Delivery
 
 - Issue: not applicable (no confirmed finding).
-- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/8 — open and mergeable; base `main` at `5f305b6c82156561862112bfa50d11d0bf8748d8`; verified head `1f82657fe5b812a83d8e5cf4fd4f007e367df6f7`. Docs-only files: this report and `docs/bughunter/INDEX.md`.
-- CI: the preceding head `188f49843eb9a568d54aedfba91b2270c96fcf19` failed Lint and Test during `actions/setup-node`: npm cache setup could not find an npm/yarn lockfile (the repo has `pnpm-lock.yaml`). The failure occurred before lint/test execution, so it is a CI configuration issue, not a source/test result. At latest read-back for head `1f82657`, no checks were reported. BugHunter did not run tests, builds, lint, type-check, or package managers.
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/8 — open and mergeable against `main` at `5f305b6c82156561862112bfa50d11d0bf8748d8`; contains only this report and `docs/bughunter/INDEX.md`.
+- CI: earlier heads failed Lint and Test during `actions/setup-node`: npm cache setup could not find an npm/yarn lockfile (the repo has `pnpm-lock.yaml`). This occurred before lint/test execution and is a CI configuration issue, not a source/test result. At the final recorded snapshot, checks on the then-current head were still in progress; no passing lint/test result was observed. BugHunter did not run tests, builds, lint, type-check, or package managers.
