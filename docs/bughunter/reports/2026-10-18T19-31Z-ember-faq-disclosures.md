@@ -26,13 +26,13 @@ This was a source-level review of the static disclosure markup, not a browser/E2
 ## Timing
 
 - Run start: **2026-10-18 19:31:39 UTC** (2026-10-19 01:01:39 IST)
-- PR and remote-artifact verification: **2026-10-18 19:33:43 UTC** (2026-10-19 01:03:43 IST)
-- Total: **00:02:04** (00:02:04 IST)
+- PR and remote-artifact verification: **2026-10-18 19:34:07 UTC** (2026-10-19 01:04:07 IST)
+- Total: **00:02:28** (00:02:28 IST) through latest CI-log review.
 - Preflight (provided by scheduler): **00:00:23**
 - Source review and route selection were not separately instrumented; durations are not estimated.
 
 ## Delivery
 
 - Issue: not applicable (no confirmed finding).
-- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/8 — open and mergeable; base `main` at `5f305b6c82156561862112bfa50d11d0bf8748d8`; verified head `06833118c266619b2f6db9112a5371d62d978c16`. Docs-only files: this report and `docs/bughunter/INDEX.md`.
-- Checks at latest read-back: none reported. Earlier read-back showed Lint/Test queued and Cloudflare Workers build in progress; no completed CI result was observed. BugHunter did not run tests, builds, lint, type-check, or package managers.
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/8 — open and mergeable; base `main` at `5f305b6c82156561862112bfa50d11d0bf8748d8`; most recent observed head `188f49843eb9a568d54aedfba91b2270c96fcf19` (before this final report amendment). Docs-only files: this report and `docs/bughunter/INDEX.md`.
+- CI: checks on earlier heads failed during `actions/setup-node` because npm cache setup could not find an npm/yarn lockfile (the repo has `pnpm-lock.yaml`); this is a CI configuration/environment issue before lint/test execution, not a source/test result. At latest read-back on `188f498`, Lint and Test were queued and GitGuardian passed. BugHunter did not run tests, builds, lint, type-check, or package managers.
