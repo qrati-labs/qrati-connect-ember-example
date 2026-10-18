@@ -22,10 +22,10 @@ No tests authored. Tests/build/lint/type-check/install were not run by BugHunter
 
 ## Timing
 
-- Preflight (provided): 17:41:38–17:42:00 UTC (23:11:38–23:12:00 IST), 22s.
-- Audit and report/index/PR delivery: 17:42:00–17:44:00 UTC (23:12:00–23:14:00 IST), 120s.
-- Total: 17:41:38–17:44:00 UTC (23:11:38–23:14:00 IST), 142s.
+- **Preflight (provided):** 17:41:38–17:42:00 UTC (23:11:38–23:12:00 IST), 22s.
+- Audit and report/index/PR delivery: 17:42:00–17:43:33 UTC (23:12:00–23:13:33 IST), 93s.
+- Total: 17:41:38–17:43:33 UTC (23:11:38–23:13:33 IST), 115s.
 
 ## PR state
 
-To be updated after creation and remote readback.
+PR #7: https://github.com/qrati-labs/qrati-connect-ember-example/pull/7. Created from base `5f305b6c82156561862112bfa50d11d0bf8748d8`; head `073be4b19be7e1605fce02bc0feb66ad7e51f831`. Readback confirms both report/index files, mergeable state, and no issue reference. Lint and Test checks were queued at readback.
