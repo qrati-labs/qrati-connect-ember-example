@@ -32,18 +32,10 @@ The static mapping appears internally consistent when considered as source, but 
 
 ## Timing
 
-All phase/total durations below are measured wall-clock intervals, not estimates. Preflight ran before the audit task and is recorded separately.
-
-| Phase | UTC start–end | Duration |
-|---|---|---:|
-| Preflight (provided script) | 2026-10-19 00:28:38–00:29:01 | 00:00:23 |
-| Candidate/PR verification and worktree isolation | 2026-10-19 00:29:11–00:29:40 | 00:00:29 |
-| Route/source trace and live read-only verification | 2026-10-19 00:29:40–00:30:15 | 00:00:35 |
-| Report, index, review, and delivery | 2026-10-19 00:30:15–00:31:00 | 00:00:45 |
-| **Total, including preflight** | **2026-10-19 00:28:38–00:31:00** | **00:02:22** |
-
-IST (UTC+05:30): total 2026-10-19 05:58:38–06:01:00.
+- Preflight (provided script): measured 00:00:23, 2026-10-19 00:28:38–00:29:01 UTC.
+- Audit elapsed time through final PR readback: 00:02:12, 2026-10-19 00:28:38–00:30:50 UTC. The script's start timestamp is used as the run start; 00:30:50 is the observed PR-readback timestamp. No finer phase breakdown is claimed because phase boundary timestamps were not captured.
+- IST (UTC+05:30): 2026-10-19 05:58:38–06:00:50.
 
 ## Delivery state
 
-Report-only documentation PR; no issue link is applicable. PR URL, files, head/base SHAs, mergeability, and checks are recorded after GitHub readback.
+Report-only documentation PR: [#9](https://github.com/qrati-labs/qrati-connect-ember-example/pull/9). Readback confirmed OPEN, MERGEABLE, merge state UNSTABLE; base `main` at `5f305b6c82156561862112bfa50d11d0bf8748d8`, head `bughunter/20261019T002838Z-8865a73e8a7a4ce189ff0578f7cbfdce-ember-route` at `145793ae3f44ce332f6c9686ac4e0a6b71c44316`; the PR contains this report and the index update and has no closing issue references. At readback, CI Lint and Test were QUEUED, GitGuardian and Cloudflare Workers Builds were IN_PROGRESS. No checks had completed.
