@@ -28,4 +28,4 @@ No source or test changes. No regression test authored. Limitations: the externa
 | **Total run (preflight start to finish)** | 2026-10-21T16:22:39Z | 2026-10-21T16:25:16Z | **00:02:37 (2.6 min)** |
 | Unclassified interval between marked phases | — | — | 00:00:09 (0.1 min) |
 
-CI/check state is read after finalizing this report; tests were not run by BugHunter.
+CI observation: the PR's current `Lint` and `Test` checks failed at `actions/setup-node@v6` during `Install Node`; both logged `Dependencies lock file is not found` because they request npm caching while this repository uses `pnpm-lock.yaml`. Dependency installation and actual test/lint steps were skipped. This is an existing workflow/configuration failure, not caused by the documentation-only PR; the open CI PR #11 is already scoped to switching Ember workflows to pnpm. No retries were performed. Tests were not run by BugHunter.
