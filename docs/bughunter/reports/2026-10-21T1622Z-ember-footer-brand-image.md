@@ -16,6 +16,16 @@ Compared the HTML entrypoint and repo asset references: no second footer-logo co
 
 No source or test changes. No regression test authored. Limitations: the external asset's live availability and browser/network behavior were not probed; no external test was performed. Tests/builds/lint were not run under BugHunter constraints.
 
-## Timing
+## Delivery and measured timing
 
-Timing table is pending completion of the run's timing ledger; no durations are estimated or backfilled.
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/13
+- Issue: none; no confirmed defect.
+
+| Phase | Segment start (UTC) | Segment end (UTC) | Elapsed |
+|---|---|---|---|
+| `preflight` | 2026-10-21T16:22:39Z | 2026-10-21T16:23:09Z | 00:00:30 (0.5 min) |
+| `audit` | 2026-10-21T16:23:18Z | 2026-10-21T16:25:16Z | 00:01:58 (2.0 min) |
+| **Total run (preflight start to finish)** | 2026-10-21T16:22:39Z | 2026-10-21T16:25:16Z | **00:02:37 (2.6 min)** |
+| Unclassified interval between marked phases | — | — | 00:00:09 (0.1 min) |
+
+CI/check state is read after finalizing this report; tests were not run by BugHunter.
