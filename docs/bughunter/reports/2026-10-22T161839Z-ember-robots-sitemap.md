@@ -16,6 +16,11 @@ No reachable failure or violated invariant was established in this bounded robot
 
 No tests authored. No tests run (**NOT RUN BY BUGHUNTER**; no test command applicable to this report-only audit).
 
-## Timing
+## Timing (measured wall-clock; UTC)
 
-Timing ledger table and total will be added from the helper after audit completion; no duration inferred.
+| Phase | Segment start (UTC) | Segment end (UTC) | Elapsed |
+|---|---|---|---|
+| `preflight` | 2026-10-22T16:18:39Z | 2026-10-22T16:19:04Z | 00:00:25 (0.4 min) |
+| `audit` | 2026-10-22T16:19:13Z | 2026-10-22T16:20:26Z | 00:01:13 (1.2 min) |
+| **Total run (preflight start to finish)** | 2026-10-22T16:18:39Z | 2026-10-22T16:20:26Z | **00:01:47 (1.8 min)** |
+| Unclassified interval between marked phases | — | — | 00:00:10 (0.2 min) |
