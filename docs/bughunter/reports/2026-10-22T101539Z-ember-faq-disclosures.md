@@ -22,6 +22,11 @@ No regression test authored because no defect was confirmed. No tests, builds, l
 
 CodeGraph reported this checkout unindexed; focused source search and file reads were used. No browser or assistive-technology execution was performed. Audit was limited to the FAQ disclosure workflow, not the full page.
 
-## Timing
+## Timing (measured wall-clock, UTC)
 
-Timing table to be filled from the BugHunter timing ledger before delivery.
+| Phase | Start | End | Elapsed |
+|---|---|---|---|
+| Preflight | 2026-10-22T10:15:39Z | 2026-10-22T10:16:05Z | 00:00:26 (0.4 min) |
+| Audit | 2026-10-22T10:16:14Z | 2026-10-22T10:17:42Z | 00:01:28 (1.5 min) |
+| **Total run** | **2026-10-22T10:15:39Z** | **2026-10-22T10:17:42Z** | **00:02:03 (2.0 min)** |
+| Unclassified interval between marked phases | — | — | 00:00:09 (0.1 min) |
