@@ -1,5 +1,6 @@
 # BugHunter reports
 
+- [20261017T145940Z — Ember public navigation](reports/20261017T145940Z-ember-public-navigation.md) — report-only; no confirmed defect.
 | Date (UTC) | Workflow | Result | Report |
 |---|---|---|---|
 | 2026-10-17 | Ember host theme toggle | No confirmed defect; report-only | [Report](reports/20261017T110239Z-ember-theme-toggle.md) |
