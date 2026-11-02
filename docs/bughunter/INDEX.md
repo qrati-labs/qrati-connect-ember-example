@@ -2,6 +2,7 @@
 
 | Date (UTC) | Scope | Result | Report |
 |---|---|---|---|
+| 2026-10-18 | Ember example crawler discovery | No confirmed defect; report-only | [Crawler discovery audit](reports/20261018T174138Z-ember-crawler-discovery.md) |
 | 2026-10-17 | Ember embed configuration and startup | No confirmed defect; report-only | [Report](reports/20261017T161839Z-ember-embed-configuration.md) |
 - [20261017T145940Z — Ember public navigation](reports/20261017T145940Z-ember-public-navigation.md) — report-only; no confirmed defect.
 | Date (UTC) | Workflow | Result | Report |
