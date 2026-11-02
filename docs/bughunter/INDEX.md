@@ -1,5 +1,6 @@
 # BugHunter reports
 
+- [2026-10-20 — Ember theme and cookie-consent initialization](reports/2026-10-20T1209Z-ember-theme-cookie-workflow.md) — report-only; no confirmed defect. Measured total review time: 00:01:18 (UTC).
 - [2026-10-19 — Ember CI dependency installation uses the wrong package manager](reports/2026-10-19T223339Z-ember-ci-package-manager.md) — confirmed CI setup defect; issue [#10](https://github.com/qrati-labs/qrati-connect-ember-example/issues/10), [PR #11](https://github.com/qrati-labs/qrati-connect-ember-example/pull/11). Total run: 00:02:12 (measured wall-clock, UTC); audit: 00:01:36.
 # BugHunter index
 
