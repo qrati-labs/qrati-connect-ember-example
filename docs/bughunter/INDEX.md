@@ -1,5 +1,8 @@
 # BugHunter reports
 
+| Date (UTC) | Workflow | Result | Report |
+|---|---|---|---|
+| 2026-10-18 19:31 | Ember FAQ disclosures | No confirmed defect; report-only | [FAQ disclosure workflow](reports/2026-10-18T19-31Z-ember-faq-disclosures.md) |
 | Date (UTC) | Scope | Result | Report |
 |---|---|---|---|
 | 2026-10-18 | Ember example crawler discovery | No confirmed defect; report-only | [Crawler discovery audit](reports/20261018T174138Z-ember-crawler-discovery.md) |
