@@ -71,8 +71,21 @@ No browser run of CookieConsent after a stored cookie. Structural wiring and sRG
 
 Copied from the timer ledger after `finish`. IST = UTC+05:30.
 
-TIMING_TABLE_PLACEHOLDER
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-06T15:12:38Z | 2026-11-06T15:13:01Z | 20:42:38 | 20:43:01 | 00:00:23 (0.4 min) |
+| `audit` | 2026-11-06T15:13:16Z | 2026-11-06T15:17:15Z | 20:43:16 | 20:47:15 | 00:03:59 (4.0 min) |
+| **Total run (preflight start to finish)** | 2026-11-06T15:12:38Z | 2026-11-06T15:17:15Z | 20:42:38 | 20:47:15 | **00:04:37 (4.6 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:15 (0.2 min) |
+
+Timing-table insertion itself occurs after this measurement snapshot. Merge of this example PR is after `finish` and is not in the measured elapsed time.
 
 ## PR / checks
 
-Filled after remote read-back.
+- Issue: https://github.com/qrati-labs/qrati-connect-ember-example/issues/30 (open, unassigned; repo unmapped)
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/31
+- Base `main` `2928266520e872451a791958e93b49bf8f7c2763` / head `9515f366994224659d83480ff1810a3bbb1a947d` (timing-doc follow-up commit after this snapshot)
+- `Fixes #30` verified via `closingIssuesReferences`
+- Mergeable; assignees none
+- Checks at first read-back: Workers Builds in progress
+- Local tests **NOT RUN BY BUGHUNTER**
