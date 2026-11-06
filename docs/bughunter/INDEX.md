@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-06 — Ember cookie-consent primary button contrast](reports/20261106T132238Z-ember-consent-primary-contrast.md) — P3 confirmed; `--cc-btn-primary-bg: #cc3d00`; issue [#22](https://github.com/qrati-labs/qrati-connect-ember-example/issues/22).
+
 - [2026-11-06 — Ember host document language](reports/20261106T130238Z-ember-html-lang.md) — P3 confirmed; `<html lang="en">`; issue [#20](https://github.com/qrati-labs/qrati-connect-ember-example/issues/20).
 
 - [2026-11-06 — Ember host Contact CTA text contrast](reports/20261106T124038Z-ember-cta-contrast.md) — P3 confirmed; `--cta-bg` for `.btn-cta-primary`; issue [#18](https://github.com/qrati-labs/qrati-connect-ember-example/issues/18).
