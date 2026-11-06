@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-06 — Ember quickstart snippet overflow](reports/20261106T235238Z-ember-quickstart-pre-overflow.md) — P3 confirmed; `.seo-section pre` overflow-x; issue [#57](https://github.com/qrati-labs/qrati-connect-ember-example/issues/57).
+
 - [2026-11-06 — Ember host SEO developer-feature cards](reports/20261106T233039Z-ember-seo-feature-cards.md) — report-only; no confirmed defect.
 
 - [2026-11-06 — Ember host feature-map cards](reports/20261106T224738Z-ember-feature-map.md) — report-only; no confirmed defect.
