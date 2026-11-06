@@ -33,7 +33,7 @@ Preflight used once. Skipped dirty rows. Skipped `preact-consent-fresh-20261016`
 
 ## Disposition
 
-Confirmed source defect. Issue [#51](https://github.com/qrati-labs/qrati-connect-ember-example/issues/51). Ownership map (`qrati-operations` `web/ownership.html`) has no `qrati-connect-ember-example` row; issue left unassigned (no guessed owner). Example repos are non-critical for this job’s merge policy.
+Confirmed source defect. Issue [#51](https://github.com/qrati-labs/qrati-connect-ember-example/issues/51). PR [#52](https://github.com/qrati-labs/qrati-connect-ember-example/pull/52). Ownership map (`qrati-operations` `web/ownership.html`) has no `qrati-connect-ember-example` row; issue and PR left unassigned (no guessed owner). Example repos are non-critical for this job’s merge policy.
 
 ## Tests
 
@@ -56,4 +56,13 @@ CodeGraph unindexed for this worktree; source reads used. No browser session. Lo
 
 ## Timing
 
-Timing table inserted after `bughunter-timing.py finish` (see update in this file before merge).
+Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30).
+
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-06T21:35:38Z | 2026-11-06T21:36:01Z | 03:05:38 | 03:06:01 | 00:00:23 (0.4 min) |
+| `audit` | 2026-11-06T21:36:23Z | 2026-11-06T21:42:28Z | 03:06:23 | 03:12:28 | 00:06:05 (6.1 min) |
+| **Total run (preflight start to finish)** | 2026-11-06T21:35:38Z | 2026-11-06T21:42:28Z | 03:05:38 | 03:12:28 | **00:06:50 (6.8 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:23 (0.4 min) |
+
+Timer record: `/home/hermes/.hermes/cache/scratch/bughunter-timing/20261106T213538Z-6bcccc73b0424dd5a007c87fb5b4e356.json`. IST dates are 2026-11-07.
