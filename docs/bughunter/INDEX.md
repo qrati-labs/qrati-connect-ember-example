@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-06 — Ember opt-out geo analytics default](reports/20261106T161438Z-ember-opt-out-analytics.md) — P3 confirmed; `analytics: { enabled: !required }`; issue [#32](https://github.com/qrati-labs/qrati-connect-ember-example/issues/32).
+
 - [2026-11-06 — Ember cookie preferences category sections](reports/20261106T151238Z-ember-consent-preferences-sections.md) — P3 confirmed; `preferencesModal.sections` + light `--cc-toggle-off-bg`; issue [#30](https://github.com/qrati-labs/qrati-connect-ember-example/issues/30).
 
 - [2026-11-06 — Ember footer cookie preferences reopen](reports/20261106T145138Z-ember-cookie-preferences-reopen.md) — P3 confirmed; footer `showCookiePreferences`; issue [#28](https://github.com/qrati-labs/qrati-connect-ember-example/issues/28).
