@@ -46,4 +46,13 @@ CodeGraph unindexed for this worktree; source reads used. No browser session. Lo
 
 ## Timing
 
-TIMING_TABLE_PLACEHOLDER
+Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30).
+
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-06T16:58:38Z | 2026-11-06T16:59:02Z | 22:28:38 | 22:29:02 | 00:00:24 (0.4 min) |
+| `audit` | 2026-11-06T16:59:25Z | 2026-11-06T17:04:50Z | 22:29:25 | 22:34:50 | 00:05:25 (5.4 min) |
+| **Total run (preflight start to finish)** | 2026-11-06T16:58:38Z | 2026-11-06T17:04:50Z | 22:28:38 | 22:34:50 | **00:06:12 (6.2 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:23 (0.4 min) |
+
+Timer record: `/home/hermes/.hermes/cache/scratch/bughunter-timing/20261106T165838Z-850917e0261b400abb34ba392271b5cd.json`.
