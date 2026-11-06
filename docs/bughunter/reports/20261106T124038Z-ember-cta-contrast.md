@@ -55,4 +55,16 @@ No browser computed-style or axe run. Ratios are from source hex tokens and the 
 
 Copied from the timer ledger after `finish`. IST = UTC+05:30.
 
-TIMING_TABLE_PENDING
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-06T12:40:38Z | 2026-11-06T12:41:01Z | 18:10:38 | 18:11:01 | 00:00:23 (0.4 min) |
+| `audit` | 2026-11-06T12:41:23Z | 2026-11-06T12:46:36Z | 18:11:23 | 18:16:36 | 00:05:13 (5.2 min) |
+| `delivery` | 2026-11-06T12:45:56Z | 2026-11-06T12:46:36Z | 18:15:56 | 18:16:36 | 00:00:40 (0.7 min) |
+| **Total run (preflight start to finish)** | 2026-11-06T12:40:38Z | 2026-11-06T12:46:36Z | 18:10:38 | 18:16:36 | **00:05:58 (6.0 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:00 (0.0 min) |
+
+Audit remained open through the start of delivery (overlapping 00:00:40); times are ledger measurements, not backfilled.
+
+## PR / checks
+
+PR [#19](https://github.com/qrati-labs/qrati-connect-ember-example/pull/19): `Fixes #18`; `MERGEABLE`; base `main` `ce9af565998ef672f2966f077afb0e1f696c7a09`; head `ac0668887b8ab600e3bc49b64f4efedbdeb449c8`. Assignees none (unmapped example). At first readback: Lint/Test pending; GitGuardian pass; Workers Builds pending. Example repo: squash-merge with branch deletion after this timing update.
