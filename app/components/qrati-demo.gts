@@ -12,6 +12,34 @@ const EMBED_URL =
   'https://cdn.jsdelivr.net/npm/@qratilabs/qrati-connect/embed/embed.js';
 const GITHUB_ORG = 'qrati-labs';
 const REPO = 'qrati-connect-ember-example';
+const THEME_STORAGE_KEY = 'qc-theme';
+
+function readHostTheme(): 'light' | 'dark' {
+  try {
+    const stored = localStorage.getItem(THEME_STORAGE_KEY);
+    if (stored === 'light' || stored === 'dark') {
+      return stored;
+    }
+  } catch {
+    // localStorage throws SecurityError when cookies/persistence are blocked.
+  }
+
+  try {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? 'dark'
+      : 'light';
+  } catch {
+    return 'light';
+  }
+}
+
+function persistHostTheme(theme: 'light' | 'dark') {
+  try {
+    localStorage.setItem(THEME_STORAGE_KEY, theme);
+  } catch {
+    // Keep the in-memory theme when storage is unavailable.
+  }
+}
 
 // Re-injects the embed script whenever the theme changes.
 const mountEmbed = modifier((element: HTMLElement, [theme]: [string]) => {
@@ -26,11 +54,7 @@ const mountEmbed = modifier((element: HTMLElement, [theme]: [string]) => {
 });
 
 export default class QratiDemo extends Component {
-  @tracked theme: 'light' | 'dark' =
-    (localStorage.getItem('qc-theme') as 'light' | 'dark') ||
-    (window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? 'dark'
-      : 'light');
+  @tracked theme: 'light' | 'dark' = readHostTheme();
 
   repoUrl = `https://github.com/${GITHUB_ORG}/${REPO}`;
   vscodeUrl = `https://vscode.dev/github/${GITHUB_ORG}/${REPO}`;
@@ -48,7 +72,7 @@ export default class QratiDemo extends Component {
     this.theme = this.theme === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', this.theme);
     document.documentElement.classList.toggle('dark', this.theme === 'dark');
-    localStorage.setItem('qc-theme', this.theme);
+    persistHostTheme(this.theme);
   }
 
   @action
