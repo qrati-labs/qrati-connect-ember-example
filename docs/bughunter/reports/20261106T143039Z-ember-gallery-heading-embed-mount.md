@@ -67,8 +67,22 @@ No browser/AT run. Structural invariant asserted from source. Third-party embed 
 
 Copied from the timer ledger after `finish`. IST = UTC+05:30.
 
-TIMING_TABLE_PENDING
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-06T14:30:39Z | 2026-11-06T14:31:03Z | 20:00:39 | 20:01:03 | 00:00:24 (0.4 min) |
+| `audit` | 2026-11-06T14:31:32Z | 2026-11-06T14:34:22Z | 20:01:32 | 20:04:22 | 00:02:50 (2.8 min) |
+| `delivery` | 2026-11-06T14:34:22Z | 2026-11-06T14:35:13Z | 20:04:22 | 20:05:13 | 00:00:51 (0.8 min) |
+| **Total run (preflight start to finish)** | 2026-11-06T14:30:39Z | 2026-11-06T14:35:13Z | 20:00:39 | 20:05:13 | **00:04:35 (4.6 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:29 (0.5 min) |
+
+Timing-table insertion itself occurs after this measurement snapshot. Merge of this example PR is after `finish` and is not in the measured elapsed time.
 
 ## PR / checks
 
-Recorded after remote read-back.
+- Issue: https://github.com/qrati-labs/qrati-connect-ember-example/issues/26 (open, unassigned; repo unmapped)
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/27
+- Base `main` `c670fafcfb2f52dead72af5746a1a85ab84617ed` / head `e21bfa1033a4cd7cca1cc74a6c1db11b77472a3e`
+- `Fixes #26` verified via `closingIssuesReferences`
+- Mergeable; assignees none
+- Checks at first read-back: CI Lint QUEUED, CI Test IN_PROGRESS, Workers Builds IN_PROGRESS, GitGuardian SUCCESS
+- Local tests **NOT RUN BY BUGHUNTER**
