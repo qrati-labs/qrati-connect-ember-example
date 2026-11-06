@@ -54,8 +54,16 @@ No screen-reader or axe run. `?raw` import of `index.html` is assumed available 
 
 Copied from the timer ledger after `finish`. IST = UTC+05:30.
 
-TIMING_PLACEHOLDER
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-06T13:02:38Z | 2026-11-06T13:03:00Z | 18:32:38 | 18:33:00 | 00:00:22 (0.4 min) |
+| `audit` | 2026-11-06T13:03:24Z | 2026-11-06T13:05:56Z | 18:33:24 | 18:35:56 | 00:02:32 (2.5 min) |
+| `delivery` | 2026-11-06T13:05:56Z | 2026-11-06T13:06:45Z | 18:35:56 | 18:36:45 | 00:00:50 (0.8 min) |
+| **Total run (preflight start to finish)** | 2026-11-06T13:02:38Z | 2026-11-06T13:06:45Z | 18:32:38 | 18:36:45 | **00:04:07 (4.1 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:23 (0.4 min) |
+
+Unclassified gap is preflight end → audit start. Times are ledger measurements, not backfilled.
 
 ## PR / checks
 
-PR pending remote read-back.
+PR [#21](https://github.com/qrati-labs/qrati-connect-ember-example/pull/21): `Fixes #20`; `MERGEABLE`; base `main` `c7295f377023965a5996676bd625cec328e9d218`; first head `6340f2b364b265018e8f206630031b119fb4dbf9`. Assignees none (unmapped example). At first readback: Lint/Test pending; GitGuardian pending; Workers Builds pending. Example repo: squash-merge with branch deletion after this timing update.
