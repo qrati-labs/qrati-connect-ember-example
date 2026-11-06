@@ -164,6 +164,10 @@ body {
 .footer a {
   text-decoration: none;
 }
+.hero h1 a,
+.hero-copy a {
+  text-decoration: underline;
+}
 
 .hero-copy {
   max-width: 44rem;

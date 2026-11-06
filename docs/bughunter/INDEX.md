@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-06 — Ember hero inline link underline](reports/20261106T211238Z-ember-hero-inline-link-underline.md) — P3 confirmed; resting underline on `.hero-copy a` / `.hero h1 a`; issue [#49](https://github.com/qrati-labs/qrati-connect-ember-example/issues/49).
+
 - [2026-11-06 — Ember GTM load after analytics consent](reports/20261106T204938Z-ember-gtm-analytics-consent.md) — report-only; no confirmed defect.
 
 - [2026-11-06 — Ember embed hash routing on history host](reports/20261106T202338Z-ember-embed-hash-routing.md) — report-only; no confirmed defect.
