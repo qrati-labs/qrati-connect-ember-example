@@ -6,7 +6,8 @@ import { modifier } from 'ember-modifier';
 import type Owner from '@ember/owner';
 import { initCookieConsent, showCookiePreferences } from '../lib/cookieConsent';
 
-const ORG = import.meta.env.VITE_ORGANIZATION_ID || '';
+const DEFAULT_EXAMPLE_ORG_ID = '69ad9c7876d8bf6f864b3a65';
+const ORG = import.meta.env.VITE_ORGANIZATION_ID || DEFAULT_EXAMPLE_ORG_ID;
 const EMBED_URL =
   import.meta.env.VITE_CDN_URL ||
   'https://cdn.jsdelivr.net/npm/@qratilabs/qrati-connect/embed/embed.js';
