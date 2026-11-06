@@ -61,8 +61,23 @@ CodeGraph unindexed. Contrast computed from declared CSS (sRGB relative luminanc
 
 ## Timing
 
-TIMING_TABLE_PLACEHOLDER
+Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30).
+
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-06T21:12:38Z | 2026-11-06T21:13:02Z | 02:42:38 | 02:43:02 | 00:00:24 (0.4 min) |
+| `audit` | 2026-11-06T21:13:32Z | 2026-11-06T21:19:28Z | 02:43:32 | 02:49:28 | 00:05:56 (5.9 min) |
+| **Total run (preflight start to finish)** | 2026-11-06T21:12:38Z | 2026-11-06T21:19:28Z | 02:42:38 | 02:49:28 | **00:06:50 (6.8 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:30 (0.5 min) |
+
+Timer record: `/home/hermes/.hermes/cache/scratch/bughunter-timing/20261106T211238Z-834436b1941a4523b7a6eb6396c70d34.json`.
 
 ## PR / checks
 
-PR_CHECKS_PLACEHOLDER
+- Issue: https://github.com/qrati-labs/qrati-connect-ember-example/issues/49 (open, unassigned; repo unmapped)
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/50
+- Base `main` `cd19aa4640e06d86dcced1fce7717a277cbb95c2` / head `bughunter/20261106T211238Z-834436b1941a4523b7a6eb6396c70d34-ember`
+- `Fixes #49` verified via `closingIssuesReferences`
+- Mergeable; assignees none (repo unmapped; no guessed owner)
+- Checks at first read-back: GitGuardian IN_PROGRESS; Workers Builds IN_PROGRESS; CI Lint/Test not yet reported
+- Local tests **NOT RUN BY BUGHUNTER**
