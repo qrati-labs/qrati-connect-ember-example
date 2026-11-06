@@ -71,4 +71,9 @@ No browser run of CookieConsent after a stored cookie. Library `enabled`/opt-out
 
 Copied from the timer ledger after `finish`. IST = UTC+05:30.
 
-TIMING_TABLE_PENDING
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-06T16:14:38Z | 2026-11-06T16:15:02Z | 21:44:38 | 21:45:02 | 00:00:24 (0.4 min) |
+| `audit` | 2026-11-06T16:15:13Z | 2026-11-06T16:20:37Z | 21:45:13 | 21:50:37 | 00:05:25 (5.4 min) |
+| **Total run (preflight start to finish)** | 2026-11-06T16:14:38Z | 2026-11-06T16:20:37Z | 21:44:38 | 21:50:37 | **00:06:00 (6.0 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:11 (0.2 min) |
