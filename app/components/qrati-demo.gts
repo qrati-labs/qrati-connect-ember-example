@@ -4,7 +4,7 @@ import { action } from '@ember/object';
 import { on } from '@ember/modifier';
 import { modifier } from 'ember-modifier';
 import type Owner from '@ember/owner';
-import { initCookieConsent } from '../lib/cookieConsent';
+import { initCookieConsent, showCookiePreferences } from '../lib/cookieConsent';
 
 const ORG = import.meta.env.VITE_ORGANIZATION_ID || '';
 const EMBED_URL =
@@ -49,6 +49,11 @@ export default class QratiDemo extends Component {
     document.documentElement.setAttribute('data-theme', this.theme);
     document.documentElement.classList.toggle('dark', this.theme === 'dark');
     localStorage.setItem('qc-theme', this.theme);
+  }
+
+  @action
+  openCookiePreferences() {
+    void showCookiePreferences();
   }
 
   <template>
@@ -158,6 +163,14 @@ export default class QratiDemo extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >Pricing</a>
+              <button
+                type="button"
+                class="footer-cookie-btn"
+                data-cc="show-preferencesModal"
+                {{on "click" this.openCookiePreferences}}
+              >
+                Cookie Preferences
+              </button>
             </nav>
             <p class="footer-note">©
               {{this.year}}
