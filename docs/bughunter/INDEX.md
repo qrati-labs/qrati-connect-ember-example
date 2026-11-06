@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-06 — Ember host Contact CTA](reports/20261106T191338Z-ember-contact-cta.md) — report-only; no confirmed defect.
+
 - [2026-11-06 — Ember cookie-consent geo response validation](reports/20261106T182638Z-ember-consent-geo-response.md) — P2 confirmed; fail-closed geo `required`; issue [#42](https://github.com/qrati-labs/qrati-connect-ember-example/issues/42).
 
 - [2026-11-06 — Ember host theme storage guard](reports/20261106T174539Z-ember-theme-storage-guard.md) — P3 confirmed; guarded `qc-theme` localStorage; issue [#40](https://github.com/qrati-labs/qrati-connect-ember-example/issues/40).
