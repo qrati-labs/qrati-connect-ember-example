@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-06 — Ember Iconify icon reserved size](reports/20261106T172038Z-ember-iconify-icon-reserved-size.md) — P3 confirmed; `iconify-icon` 1em host box; issue [#38](https://github.com/qrati-labs/qrati-connect-ember-example/issues/38).
+
 - [2026-11-06 — Ember example quickstart embed script](reports/20261106T165838Z-ember-quickstart-embed-script.md) — P3 confirmed; on-page quickstart uses embed.js; issue [#36](https://github.com/qrati-labs/qrati-connect-ember-example/issues/36).
 
 - [2026-11-06 — Ember theme toggle label in name](reports/20261106T163638Z-ember-theme-toggle-label-in-name.md) — P3 confirmed; drop generic theme-toggle `aria-label`; issue [#34](https://github.com/qrati-labs/qrati-connect-ember-example/issues/34).

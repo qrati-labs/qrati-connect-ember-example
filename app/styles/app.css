@@ -363,6 +363,12 @@ html.dark #cc-main,
 .feature-map-card:hover { transform: translateY(-3px); border-color: #ff480066; }
 .feature-map-heading { display: flex; align-items: center; gap: .7rem; }
 .feature-map-heading h3 { margin: 0; color: var(--page-heading, var(--heading)); }
+/* Reserve the host box before iconify-icon.js upgrades the element (Iconify layout-shift guidance). */
+iconify-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
 .feature-map-heading iconify-icon,.seo-feature-icon,.seo-feature-card > iconify-icon { color: var(--brand-accent, var(--accent)); font-size: 1.5rem; flex: none; }
 .seo-feature-card > iconify-icon { display: block; margin-bottom: .8rem; padding: .5rem; border-radius: .75rem; background: #ff480014; }
 .seo-cta-card { padding: clamp(2rem,5vw,4rem); border: 1px solid #ff480066; border-radius: 1.75rem; background: radial-gradient(circle at 10% 0,#ff48002b,transparent 45%),var(--card-bg, var(--card)); box-shadow: 0 1.5rem 4rem #ff48001c; }
