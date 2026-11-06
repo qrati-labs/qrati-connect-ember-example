@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-06 — Ember live-gallery heading vs embed remount](reports/20261106T143039Z-ember-gallery-heading-embed-mount.md) — P3 confirmed; `mountEmbed` inner host; issue [#26](https://github.com/qrati-labs/qrati-connect-ember-example/issues/26).
+
 - [2026-11-06 — Ember host hero kicker contrast](reports/20261106T134338Z-ember-hero-kicker-contrast.md) — P3 confirmed; light `--brand-accent: #c24100` and themed `.hero-kicker`; issue [#24](https://github.com/qrati-labs/qrati-connect-ember-example/issues/24).
 
 - [2026-11-06 — Ember cookie-consent primary button contrast](reports/20261106T132238Z-ember-consent-primary-contrast.md) — P3 confirmed; `--cc-btn-primary-bg: #cc3d00`; issue [#22](https://github.com/qrati-labs/qrati-connect-ember-example/issues/22).
