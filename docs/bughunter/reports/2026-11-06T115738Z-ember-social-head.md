@@ -45,4 +45,16 @@ Document-head identity was only partially filled (title/description/canonical) a
 
 ## Timing
 
-Timing table inserted after `finish`.
+Measured wall-clock from `bughunter-timing.py finish` (IST = UTC+05:30).
+
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-06T11:57:38Z | 2026-11-06T11:58:00Z | 17:27:38 | 17:28:00 | 00:00:22 (0.4 min) |
+| `audit` | 2026-11-06T11:58:19Z | 2026-11-06T12:01:52Z | 17:28:19 | 17:31:52 | 00:03:33 (3.5 min) |
+| `delivery` | 2026-11-06T12:01:52Z | 2026-11-06T12:02:42Z | 17:31:52 | 17:32:42 | 00:00:50 (0.8 min) |
+| **Total run (preflight start to finish)** | 2026-11-06T11:57:38Z | 2026-11-06T12:02:42Z | 17:27:38 | 17:32:42 | **00:05:04 (5.1 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:18 (0.3 min) |
+
+## PR / checks
+
+PR [#17](https://github.com/qrati-labs/qrati-connect-ember-example/pull/17): `Fixes #16`; `MERGEABLE`; base `main` `4051c6052c0316ccfac3cc0344259a7e092221a5`; head `26f849784c802ee16e0881e8916ab2c8793fe1f9`. At first readback, CI Lint and Test were QUEUED; Cloudflare Workers Builds was IN_PROGRESS. Example repo: squash-merge with branch deletion after this report update.
