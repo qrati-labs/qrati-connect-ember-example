@@ -62,8 +62,24 @@ CodeGraph unindexed. No browser session of the Ember host. Contrast computed fro
 
 ## Timing
 
-Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30). Table inserted after `finish`.
+Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30).
+
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-06T22:47:38Z | 2026-11-06T22:48:01Z | 04:17:38 | 04:18:01 | 00:00:23 (0.4 min) |
+| `audit` | 2026-11-06T22:48:20Z | 2026-11-06T22:51:45Z | 04:18:20 | 04:21:45 | 00:03:25 (3.4 min) |
+| `delivery` | 2026-11-06T22:51:45Z | 2026-11-06T22:52:40Z | 04:21:45 | 04:22:40 | 00:00:54 (0.9 min) |
+| **Total run (preflight start to finish)** | 2026-11-06T22:47:38Z | 2026-11-06T22:52:40Z | 04:17:38 | 04:22:40 | **00:05:02 (5.0 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:19 (0.3 min) |
+
+Timer record: `/home/hermes/.hermes/cache/scratch/bughunter-timing/20261106T224738Z-06b5ac8d5ba940619654054630b22a6b.json`. Timing-table insertion itself occurs after this measurement snapshot.
 
 ## PR / checks
 
-Filled after remote read-back.
+- Issue: none (report-only)
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/55
+- Base `main` `61d68ff76d0cd623c6915f8ec82cdb9e81c5a587` / head `bughunter/20261106T224738Z-06b5ac8d5ba940619654054630b22a6b-ember`
+- `closingIssuesReferences`: none
+- Mergeable; assignees none (repo unmapped; no guessed owner)
+- Checks at first read-back: GitGuardian pass; CI Lint pending; CI Test pending; Workers Builds pending
+- Local tests **NOT RUN BY BUGHUNTER**
