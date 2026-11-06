@@ -56,8 +56,16 @@ No browser computed-style or axe run. Ratios are from source hex tokens and the 
 
 Copied from the timer ledger after `finish`. IST = UTC+05:30.
 
-TIMING_PLACEHOLDER
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-06T13:22:38Z | 2026-11-06T13:23:01Z | 18:52:38 | 18:53:01 | 00:00:23 (0.4 min) |
+| `audit` | 2026-11-06T13:23:22Z | 2026-11-06T13:27:16Z | 18:53:22 | 18:57:16 | 00:03:53 (3.9 min) |
+| `delivery` | 2026-11-06T13:27:16Z | 2026-11-06T13:27:16Z | 18:57:16 | 18:57:16 | 00:00:00 (0.0 min) |
+| **Total run (preflight start to finish)** | 2026-11-06T13:22:38Z | 2026-11-06T13:27:16Z | 18:52:38 | 18:57:16 | **00:04:38 (4.6 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:22 (0.4 min) |
+
+Timing-table insertion itself occurs after this measurement snapshot. Merge of this example PR is after `finish` and is not in the measured elapsed time.
 
 ## PR / checks
 
-Filled after remote read-back.
+PR [#23](https://github.com/qrati-labs/qrati-connect-ember-example/pull/23): `Fixes #22`; `MERGEABLE`; base `main` `98738ae3c669bb337d3b37a37f4b8c58fad42d40`; head `6603c86c1eaab5cc1f84d073e44c7985ec2c8195`. Assignees none (unmapped example). At first readback: Lint/Test pending; GitGuardian pending; Workers Builds pending. Example repo: squash-merge with branch deletion after this timing update.
