@@ -61,7 +61,6 @@ export default class QratiDemo extends Component {
       class="theme-toggle"
       type="button"
       {{on "click" this.toggleTheme}}
-      aria-label="Toggle theme"
     >
       {{if this.isDark "☀ Light" "🌙 Dark"}}
     </button>
