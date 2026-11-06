@@ -2,6 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <script>
+      (function () {
+        try {
+          var saved = null;
+          try {
+            saved = window.localStorage.getItem('qc-theme');
+          } catch (e) {}
+          var theme;
+          if (saved === 'light' || saved === 'dark') {
+            theme = saved;
+          } else {
+            try {
+              theme = window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light';
+            } catch (e) {
+              theme = 'light';
+            }
+          }
+          document.documentElement.setAttribute('data-theme', theme);
+          document.documentElement.classList.toggle('dark', theme === 'dark');
+        } catch (e) {}
+      })();
+    </script>
     <title>Qrati Connect — Ember Example</title>
     <meta name="description" content="Embed a live event photo gallery in Ember with guest uploads, lightbox, reactions, and contest leaderboards.">
     <meta name="robots" content="index, follow">
