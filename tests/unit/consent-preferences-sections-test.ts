@@ -65,10 +65,10 @@ function resolveColor(value: string, vars: Record<string, string>): number[] {
 module('Unit | cookie-consent preferences sections', function () {
   test('preferences modal links necessary and analytics categories', function (assert) {
     assert.true(
-      /categories:\s*\{\s*necessary:\s*\{\s*enabled:\s*true,\s*readOnly:\s*true\s*\},\s*analytics:\s*\{\s*\}/.test(
+      /categories:\s*\{\s*necessary:\s*\{\s*enabled:\s*true,\s*readOnly:\s*true\s*\},\s*analytics:\s*\{\s*enabled:\s*!required\s*\}/.test(
         consentSource,
       ),
-      'consent still configures necessary (readonly) and analytics categories',
+      'consent still configures necessary (readonly) and analytics enabled: !required',
     );
 
     assert.true(
