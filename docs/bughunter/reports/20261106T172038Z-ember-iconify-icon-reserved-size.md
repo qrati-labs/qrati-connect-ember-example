@@ -50,4 +50,13 @@ CodeGraph unindexed for this worktree; source reads used. No browser session or 
 
 ## Timing
 
-timing incomplete
+Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30).
+
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-06T17:20:38Z | 2026-11-06T17:21:01Z | 22:50:38 | 22:51:01 | 00:00:23 (0.4 min) |
+| `audit` | 2026-11-06T17:21:16Z | 2026-11-06T17:29:59Z | 22:51:16 | 22:59:59 | 00:08:43 (8.7 min) |
+| **Total run (preflight start to finish)** | 2026-11-06T17:20:38Z | 2026-11-06T17:29:59Z | 22:50:38 | 22:59:59 | **00:09:21 (9.3 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:15 (0.2 min) |
+
+Timer record: `/home/hermes/.hermes/cache/scratch/bughunter-timing/20261106T172038Z-14c2f9a6e429423eb755a94d56c36d83.json`.
