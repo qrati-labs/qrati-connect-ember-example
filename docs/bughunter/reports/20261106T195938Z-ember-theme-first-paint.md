@@ -57,8 +57,23 @@ CodeGraph unindexed for this worktree; source reads used. No browser session of 
 
 ## Timing
 
-Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30). Table inserted after `finish`.
+Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30).
+
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-06T19:59:38Z | 2026-11-06T20:00:01Z | 01:29:38 | 01:30:01 | 00:00:23 (0.4 min) |
+| `audit` | 2026-11-06T20:00:13Z | 2026-11-06T20:07:42Z | 01:30:13 | 01:37:42 | 00:07:29 (7.5 min) |
+| **Total run (preflight start to finish)** | 2026-11-06T19:59:38Z | 2026-11-06T20:07:42Z | 01:29:38 | 01:37:42 | **00:08:04 (8.1 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:13 (0.2 min) |
+
+Timer record: `/home/hermes/.hermes/cache/scratch/bughunter-timing/20261106T195938Z-afa39aee3879418f89d06ca18045edd2.json`. Timing-table insertion itself occurs after this measurement snapshot.
 
 ## PR / checks
 
-To be recorded after remote read-back.
+- Issue: [#45](https://github.com/qrati-labs/qrati-connect-ember-example/issues/45) (open, unassigned; repo unmapped)
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/46
+- Base `main` `c5cac7266c01cc718ebfb36f1cd2448f5afe1704` / head `bughunter/20261106T195938Z-afa39aee3879418f89d06ca18045edd2-ember`
+- `closingIssuesReferences`: #45
+- Mergeable; assignees none (repo unmapped; no guessed owner)
+- Checks at first read-back: GitGuardian pass; CI Lint pending; CI Test pending; Workers Builds pending
+- Local tests **NOT RUN BY BUGHUNTER**
