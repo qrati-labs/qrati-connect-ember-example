@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-06 — Ember embed hash routing on history host](reports/20261106T202338Z-ember-embed-hash-routing.md) — report-only; no confirmed defect.
+
 - [2026-11-06 — Ember host theme first paint](reports/20261106T195938Z-ember-theme-first-paint.md) — P3 confirmed; blocking `qc-theme` head script; issue [#45](https://github.com/qrati-labs/qrati-connect-ember-example/issues/45).
 
 - [2026-11-06 — Ember host Contact CTA](reports/20261106T191338Z-ember-contact-cta.md) — report-only; no confirmed defect.
