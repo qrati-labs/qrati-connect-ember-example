@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-06 — Ember host Contact CTA text contrast](reports/20261106T124038Z-ember-cta-contrast.md) — P3 confirmed; `--cta-bg` for `.btn-cta-primary`; issue [#18](https://github.com/qrati-labs/qrati-connect-ember-example/issues/18).
+
 - [2026-11-06 — Ember social document-head identity](reports/2026-11-06T115738Z-ember-social-head.md) — confirmed low-severity defect; missing Open Graph/Twitter image tags and document-relative favicon. Issue [#16](https://github.com/qrati-labs/qrati-connect-ember-example/issues/16).
 
 - [2026-10-22 — Ember robots and sitemap routing](reports/2026-10-22T161839Z-ember-robots-sitemap.md) — report-only; no confirmed defect.
