@@ -85,8 +85,8 @@ module('Unit | host Contact CTA text contrast', function () {
 
     assert.strictEqual(
       light['--brand-accent'],
-      '#e14f00',
-      'light --brand-accent is unchanged',
+      '#c24100',
+      'light --brand-accent stays at the WCAG 1.4.3 hero token',
     );
     assert.strictEqual(
       dark['--brand-accent'],
