@@ -53,8 +53,22 @@ CodeGraph unindexed on this worktree; source reads used. Contrast computed from 
 
 ## Timing
 
-timing incomplete — table inserted after `bughunter-timing.py finish`
+Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30).
+
+| Phase | Segment start (UTC) | Segment end (UTC) | Elapsed |
+|---|---|---|---|
+| `preflight` | 2026-11-06T13:43:38Z | 2026-11-06T13:44:01Z | 00:00:23 (0.4 min) |
+| `audit` | 2026-11-06T13:44:21Z | 2026-11-06T13:50:48Z | 00:06:27 (6.5 min) |
+| **Total run (preflight start to finish)** | 2026-11-06T13:43:38Z | 2026-11-06T13:50:48Z | **00:07:10 (7.2 min)** |
+| Unclassified interval between marked phases | — | — | 00:00:20 (0.3 min) |
+
+Start 19:13:38 IST / end 19:20:48 IST.
 
 ## PR / checks
 
-To be recorded after remote read-back.
+- Issue: https://github.com/qrati-labs/qrati-connect-ember-example/issues/24 (open, unassigned; repo unmapped)
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/25
+- Base `main` `64819b37d0092b297821388971ff762acf9c9802` / head `a9078aaf2497d25903099ad0caf18de24b361c93`
+- `Fixes #24` verified via `closingIssuesReferences`
+- Mergeable; checks at first read-back: CI Lint QUEUED, CI Test QUEUED, Workers Builds IN_PROGRESS
+- Local tests **NOT RUN BY BUGHUNTER**
