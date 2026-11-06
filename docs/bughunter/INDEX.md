@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-06 — Ember theme toggle label in name](reports/20261106T163638Z-ember-theme-toggle-label-in-name.md) — P3 confirmed; drop generic theme-toggle `aria-label`; issue [#34](https://github.com/qrati-labs/qrati-connect-ember-example/issues/34).
+
 - [2026-11-06 — Ember opt-out geo analytics default](reports/20261106T161438Z-ember-opt-out-analytics.md) — P3 confirmed; `analytics: { enabled: !required }`; issue [#32](https://github.com/qrati-labs/qrati-connect-ember-example/issues/32).
 
 - [2026-11-06 — Ember cookie preferences category sections](reports/20261106T151238Z-ember-consent-preferences-sections.md) — P3 confirmed; `preferencesModal.sections` + light `--cc-toggle-off-bg`; issue [#30](https://github.com/qrati-labs/qrati-connect-ember-example/issues/30).
