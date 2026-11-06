@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-06 — Ember host feature-map cards](reports/20261106T224738Z-ember-feature-map.md) — report-only; no confirmed defect.
+
 - [2026-11-06 — Ember host short-answer section](reports/20261106T222338Z-ember-answer-section.md) — report-only; no confirmed defect.
 
 - [2026-11-06 — Ember host GitHub/VS Code action pills](reports/20261106T215838Z-ember-action-pills.md) — report-only; no confirmed defect.
