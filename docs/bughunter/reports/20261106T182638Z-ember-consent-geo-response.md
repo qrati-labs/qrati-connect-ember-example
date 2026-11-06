@@ -57,4 +57,13 @@ CodeGraph unindexed for this worktree; source reads used. No live geo 503 inject
 
 ## Timing
 
-Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30). Table filled after `finish`.
+Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30).
+
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-06T18:26:38Z | 2026-11-06T18:27:01Z | 23:56:38 | 23:57:01 | 00:00:23 (0.4 min) |
+| `audit` | 2026-11-06T18:27:15Z | 2026-11-06T18:34:05Z | 23:57:15 | 00:04:05 | 00:06:51 (6.8 min) |
+| **Total run (preflight start to finish)** | 2026-11-06T18:26:38Z | 2026-11-06T18:34:05Z | 23:56:38 | 00:04:05 | **00:07:27 (7.5 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:14 (0.2 min) |
+
+Timer record: `/home/hermes/.hermes/cache/scratch/bughunter-timing/20261106T182638Z-f72754499d4247309de9985f1ba094bd.json`.
