@@ -42,9 +42,21 @@ function persistHostTheme(theme: 'light' | 'dark') {
   }
 }
 
-// Re-injects the embed script whenever the theme changes.
+// Mount embed.js once. Theme changes update the widget (or in-flight data-theme).
+// Wiping innerHTML detaches a classic script that still executes and mounts on document.body.
 const mountEmbed = modifier((element: HTMLElement, [theme]: [string]) => {
-  element.innerHTML = '';
+  const widget = element.querySelector('qrati-connect');
+  if (widget) {
+    widget.setAttribute('theme', theme);
+    return;
+  }
+
+  const pending = element.querySelector('script');
+  if (pending) {
+    pending.dataset.theme = theme;
+    return;
+  }
+
   const s = document.createElement('script');
   s.async = true;
   s.src = EMBED_URL;
