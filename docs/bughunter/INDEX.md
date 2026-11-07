@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-07 — Ember cookie-consent Global Privacy Control (`respectGpc`)](reports/20261107T121338Z-ember-consent-gpc.md) — report-only; no confirmed defect.
+
 - [2026-11-07 — Ember host viewport zoom / text resize](reports/20261107T115038Z-ember-viewport-zoom.md) — report-only; no confirmed defect.
 
 - [2026-11-07 — Ember host forced-colors / prefers-contrast](reports/20261107T112538Z-ember-forced-colors.md) — report-only; no confirmed defect.
