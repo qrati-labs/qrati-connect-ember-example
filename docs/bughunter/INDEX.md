@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-07 — Ember host JSON-LD SoftwareApplication identity](reports/20261107T042538Z-ember-jsonld-identity.md) — report-only; no confirmed defect.
+
 - [2026-11-07 — Ember host history rootURL vs Vite subpath base](reports/20261107T040238Z-ember-rooturl-subpath.md) — report-only; no confirmed defect.
 
 - [2026-11-07 — Ember host theme-toggle CSS position cascade](reports/20261107T031838Z-ember-theme-toggle-position.md) — report-only; no confirmed defect.
