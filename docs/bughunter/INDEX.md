@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-07 — Ember host Open Graph / Twitter image alt and dimension tags](reports/20261107T084238Z-ember-og-image-alt.md) — report-only; no confirmed defect.
+
 - [2026-11-07 — Ember host apple-touch-icon and PNG favicon bitmap](reports/20261107T081838Z-ember-apple-touch-icon.md) — report-only; no confirmed defect.
 
 - [2026-11-07 — Ember live gallery embed loader mount](reports/20261107T075138Z-ember-embed-loader-mount.md) — report-only; no confirmed defect.
