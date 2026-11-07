@@ -63,11 +63,22 @@ CodeGraph unindexed. No iOS Safari / Web Clip observation. PNG alpha counts from
 
 Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30). Copied from the timer ledger after `finish`.
 
-TIMING_TABLE_PLACEHOLDER
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-07T08:18:38Z | 2026-11-07T08:19:00Z | 13:48:38 | 13:49:00 | 00:00:22 (0.4 min) |
+| `audit` | 2026-11-07T08:19:32Z | 2026-11-07T08:25:48Z | 13:49:32 | 13:55:48 | 00:06:15 (6.2 min) |
+| `delivery` | 2026-11-07T08:25:48Z | 2026-11-07T08:26:20Z | 13:55:48 | 13:56:20 | 00:00:32 (0.5 min) |
+| **Total run (preflight start to finish)** | 2026-11-07T08:18:38Z | 2026-11-07T08:26:20Z | 13:48:38 | 13:56:20 | **00:07:42 (7.7 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:32 (0.5 min) |
+
+Timer record: `/home/hermes/.hermes/cache/scratch/bughunter-timing/20261107T081838Z-50c62a0cbdea4f2fa9fde7f2cf6da81b.json`. Timing-table insertion itself occurs after this measurement snapshot. Merge of this example PR is after `finish` and is not in the measured elapsed time.
 
 ## PR / checks
 
 - Issue: none (report-only)
-- PR: (filled after open)
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/75
+- Base `main` `939513fd1fe048f734dd2e8b17bd45c08019f8d1` / head `bughunter/20261107T081838Z-50c62a0cbdea4f2fa9fde7f2cf6da81b-ember`
 - `closingIssuesReferences`: none
+- Mergeable at first read-back: MERGEABLE; assignees none (repo unmapped; no guessed owner)
+- Checks at first PR read-back: GitGuardian pass; CI Lint/Test pending; Workers Builds pending
 - Local tests **NOT RUN BY BUGHUNTER**
