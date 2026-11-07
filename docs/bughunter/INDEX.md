@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-07 — Ember host keyboard bypass to the live gallery](reports/20261107T044738Z-ember-skip-bypass.md) — report-only; no confirmed defect.
+
 - [2026-11-07 — Ember host JSON-LD SoftwareApplication identity](reports/20261107T042538Z-ember-jsonld-identity.md) — report-only; no confirmed defect.
 
 - [2026-11-07 — Ember host history rootURL vs Vite subpath base](reports/20261107T040238Z-ember-rooturl-subpath.md) — report-only; no confirmed defect.
