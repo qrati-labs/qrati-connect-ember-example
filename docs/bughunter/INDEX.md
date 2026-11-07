@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-07 — Ember host browser chrome theme-color vs data-theme](reports/20261107T014838Z-ember-theme-color.md) — report-only; no confirmed defect.
+
 - [2026-11-07 — Ember live gallery lightbox vs host overflow](reports/20261107T012438Z-ember-gallery-lightbox-overflow.md) — report-only; no confirmed defect.
 
 - [2026-11-07 — Ember embed theme remount vs document.body](reports/20261107T005838Z-ember-embed-theme-remount.md) — P2 confirmed; in-place theme update; issue [#60](https://github.com/qrati-labs/qrati-connect-ember-example/issues/60).
