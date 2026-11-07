@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-07 — Ember cookie-consent cookie record (name, domain, path, SameSite)](reports/20261107T092838Z-ember-consent-cookie-record.md) — report-only; no confirmed defect.
+
 - [2026-11-07 — Ember host Open Graph locale / site_name and Twitter site](reports/20261107T090638Z-ember-og-locale-sitename.md) — report-only; no confirmed defect.
 
 - [2026-11-07 — Ember host Open Graph / Twitter image alt and dimension tags](reports/20261107T084238Z-ember-og-image-alt.md) — report-only; no confirmed defect.
