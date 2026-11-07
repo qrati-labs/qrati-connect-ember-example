@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-07 — Ember host live prefers-color-scheme after first paint](reports/20261107T064238Z-ember-os-theme-live.md) — report-only; no confirmed defect.
+
 - [2026-11-07 — Ember host prefers-reduced-motion](reports/20261107T061938Z-ember-reduced-motion.md) — report-only; no confirmed defect.
 
 - [2026-11-07 — Ember host footer pointer target size](reports/20261107T053238Z-ember-footer-target-size.md) — report-only; no confirmed defect.
