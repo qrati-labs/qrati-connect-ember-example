@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-07 — Ember host theme-toggle CSS position cascade](reports/20261107T031838Z-ember-theme-toggle-position.md) — report-only; no confirmed defect.
+
 - [2026-11-07 — Ember host Iconify script and on-demand icon fetch](reports/20261107T021238Z-ember-iconify-script.md) — report-only; no confirmed defect.
 
 - [2026-11-07 — Ember host browser chrome theme-color vs data-theme](reports/20261107T014838Z-ember-theme-color.md) — report-only; no confirmed defect.
