@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-07 — Ember cookie-consent analytics revoke (Consent Mode vs autoClear)](reports/20261107T101539Z-ember-consent-analytics-revoke.md) — report-only; no confirmed defect.
+
 - [2026-11-07 — Ember Worker HTML security headers](reports/20261107T095138Z-ember-worker-html-security-headers.md) — report-only; no confirmed defect.
 
 - [2026-11-07 — Ember cookie-consent cookie record (name, domain, path, SameSite)](reports/20261107T092838Z-ember-consent-cookie-record.md) — report-only; no confirmed defect.
