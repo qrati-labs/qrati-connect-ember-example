@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-07 — Ember live gallery embed loader mount](reports/20261107T075138Z-ember-embed-loader-mount.md) — report-only; no confirmed defect.
+
 - [2026-11-07 — Ember first-layer cookie-consent modal](reports/20261107T072738Z-ember-consent-first-layer.md) — report-only; no confirmed defect.
 
 - [2026-11-07 — Ember host live prefers-color-scheme after first paint](reports/20261107T064238Z-ember-os-theme-live.md) — report-only; no confirmed defect.
