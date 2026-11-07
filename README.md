@@ -24,8 +24,10 @@ A single `async` script tag mounts the widget where it sits; config travels in
 ></script>
 ```
 
-See `app/components/qrati-demo.gts` — the script tag is re-injected whenever
-the theme toggle changes, since scripts don't react to attribute mutation.
+See `app/components/qrati-demo.gts` — the embed script is injected once.
+Theme changes set `theme` on the existing `<qrati-connect>` (or `data-theme`
+on the in-flight script). Reloading the loader would race with detached
+classic scripts that still execute and fall back to `document.body`.
 
 ## Run it
 

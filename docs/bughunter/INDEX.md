@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-07 — Ember embed theme remount vs document.body](reports/20261107T005838Z-ember-embed-theme-remount.md) — P2 confirmed; in-place theme update; issue [#60](https://github.com/qrati-labs/qrati-connect-ember-example/issues/60).
+
 - [2026-11-07 — Ember host Inter/Sora webfont loading](reports/20261107T003438Z-ember-host-webfonts.md) — report-only; no confirmed defect.
 
 - [2026-11-06 — Ember quickstart snippet overflow](reports/20261106T235238Z-ember-quickstart-pre-overflow.md) — P3 confirmed; `.seo-section pre` overflow-x; issue [#57](https://github.com/qrati-labs/qrati-connect-ember-example/issues/57).
