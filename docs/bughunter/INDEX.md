@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-07 — Ember host footer pointer target size](reports/20261107T053238Z-ember-footer-target-size.md) — report-only; no confirmed defect.
+
 - [2026-11-07 — Ember host keyboard focus indicators on links and Contact CTA](reports/20261107T050938Z-ember-link-focus-visible.md) — report-only; no confirmed defect.
 
 - [2026-11-07 — Ember host keyboard bypass to the live gallery](reports/20261107T044738Z-ember-skip-bypass.md) — report-only; no confirmed defect.
