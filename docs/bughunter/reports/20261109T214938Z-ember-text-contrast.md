@@ -77,4 +77,12 @@ CodeGraph unindexed. Ratios from source tokens + sRGB relative luminance (python
 
 ## Timing
 
-TIMING_PLACEHOLDER
+Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30). Copied from the timer ledger after `finish`.
+
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-09T21:49:38Z | 2026-11-09T21:50:00Z | 03:19:38 | 03:20:00 | 00:00:22 (0.4 min) |
+| `audit` | 2026-11-09T21:50:29Z | 2026-11-09T21:55:15Z | 03:20:29 | 03:25:15 | 00:04:46 (4.8 min) |
+| `delivery` | 2026-11-09T21:55:15Z | 2026-11-09T21:55:48Z | 03:25:15 | 03:25:48 | 00:00:33 (0.6 min) |
+| **Total run (preflight start to finish)** | 2026-11-09T21:49:38Z | 2026-11-09T21:55:48Z | 03:19:38 | 03:25:48 | **00:06:10 (6.2 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:29 (0.5 min) |
