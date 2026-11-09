@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-09 — Ember host WCAG 1.4.11 non-text contrast](reports/20261109T181138Z-ember-non-text-contrast.md) — report-only; no confirmed defect.
+
 - [2026-11-09 — Ember host WCAG 1.4.10 reflow (320 CSS px)](reports/20261109T174738Z-ember-reflow.md) — report-only; no confirmed defect.
 
 - [2026-11-09 — Ember host WCAG 1.4.12 text spacing](reports/20261109T165738Z-ember-text-spacing.md) — report-only; no confirmed defect.
