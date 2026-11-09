@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-09 — Ember host WCAG 1.4.3 contrast (minimum)](reports/20261109T214938Z-ember-text-contrast.md) — report-only; no confirmed defect.
+
 - [2026-11-09 — Ember host WCAG 1.3.2 meaningful sequence](reports/20261109T212838Z-ember-meaningful-sequence.md) — report-only; no confirmed defect.
 
 - [2026-11-09 — Ember host WCAG 1.3.1 info and relationships](reports/20261109T210738Z-ember-info-relationships.md) — report-only; no confirmed defect.
