@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-09 — Ember host WCAG 2.1.2 no keyboard trap](reports/20261109T225738Z-ember-no-keyboard-trap.md) — report-only; no confirmed defect.
+
 - [2026-11-09 — Ember host WCAG 2.1.1 keyboard](reports/20261109T223538Z-ember-keyboard.md) — report-only; no confirmed defect.
 
 - [2026-11-09 — Ember host WCAG 1.4.3 contrast (minimum)](reports/20261109T214938Z-ember-text-contrast.md) — report-only; no confirmed defect.
