@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-09 — Ember host WCAG 2.4.11 focus not obscured](reports/20261109T194038Z-ember-focus-not-obscured.md) — report-only; no confirmed defect.
+
 - [2026-11-09 — Ember host WCAG 2.4.3 focus order](reports/20261109T191838Z-ember-focus-order.md) — report-only; no confirmed defect.
 
 - [2026-11-09 — Ember host WCAG 2.4.2 page titled](reports/20261109T185738Z-ember-page-titled.md) — report-only; no confirmed defect.
