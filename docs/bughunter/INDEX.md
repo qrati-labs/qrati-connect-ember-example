@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-09 — Ember host WCAG 1.3.2 meaningful sequence](reports/20261109T212838Z-ember-meaningful-sequence.md) — report-only; no confirmed defect.
+
 - [2026-11-09 — Ember host WCAG 1.3.1 info and relationships](reports/20261109T210738Z-ember-info-relationships.md) — report-only; no confirmed defect.
 
 - [2026-11-09 — Ember host WCAG 2.4.6 headings and labels](reports/20261109T200338Z-ember-headings-labels.md) — report-only; no confirmed defect.
