@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-09 — Ember host WCAG 2.4.4 link purpose](reports/20261109T183438Z-ember-link-purpose.md) — report-only; no confirmed defect.
+
 - [2026-11-09 — Ember host WCAG 1.4.11 non-text contrast](reports/20261109T181138Z-ember-non-text-contrast.md) — report-only; no confirmed defect.
 
 - [2026-11-09 — Ember host WCAG 1.4.10 reflow (320 CSS px)](reports/20261109T174738Z-ember-reflow.md) — report-only; no confirmed defect.
