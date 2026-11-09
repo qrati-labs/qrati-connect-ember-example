@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-09 — Ember host WCAG 1.4.12 text spacing](reports/20261109T165738Z-ember-text-spacing.md) — report-only; no confirmed defect.
+
 - [2026-11-07 — Ember cookie-consent Global Privacy Control (`respectGpc`)](reports/20261107T121338Z-ember-consent-gpc.md) — report-only; no confirmed defect.
 
 - [2026-11-07 — Ember host viewport zoom / text resize](reports/20261107T115038Z-ember-viewport-zoom.md) — report-only; no confirmed defect.
