@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-09 — Ember host WCAG 2.2.2 pause, stop, hide](reports/20261109T231938Z-ember-pause-stop-hide.md) — report-only; no confirmed defect.
+
 - [2026-11-09 — Ember host WCAG 2.1.2 no keyboard trap](reports/20261109T225738Z-ember-no-keyboard-trap.md) — report-only; no confirmed defect.
 
 - [2026-11-09 — Ember host WCAG 2.1.1 keyboard](reports/20261109T223538Z-ember-keyboard.md) — report-only; no confirmed defect.
