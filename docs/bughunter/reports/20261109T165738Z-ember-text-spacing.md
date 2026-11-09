@@ -61,16 +61,24 @@ CodeGraph unindexed. No browser text-spacing bookmarklet session; sizes are from
 
 ## Timing
 
-Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30). Copied from the timer ledger after `finish`.
+Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30). Copied from the timer ledger after `finish`. Audit was still open when `delivery` started, so the audit and delivery segments overlap (~17:06:06Z–17:07:11Z); do not treat the split as a clean boundary. Total run is preflight start to finish.
 
-TIMING_TABLE_PLACEHOLDER
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-09T16:57:38Z | 2026-11-09T16:58:06Z | 22:27:38 | 22:28:06 | 00:00:28 (0.5 min) |
+| `audit` | 2026-11-09T16:58:16Z | 2026-11-09T17:07:11Z | 22:28:16 | 22:37:11 | 00:08:55 (8.9 min) |
+| `delivery` | 2026-11-09T17:06:06Z | 2026-11-09T17:07:11Z | 22:36:06 | 22:37:11 | 00:01:05 (1.1 min) |
+| **Total run (preflight start to finish)** | 2026-11-09T16:57:38Z | 2026-11-09T17:07:11Z | 22:27:38 | 22:37:11 | **00:09:33 (9.6 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:00 (0.0 min) |
 
 Timer record: `/home/hermes/.hermes/cache/scratch/bughunter-timing/20261109T165738Z-d023892e61964939a0a257258e493a08.json`. Timing-table insertion itself occurs after this measurement snapshot. Merge of this example PR is after `finish` and is not in the measured elapsed time.
 
 ## PR / checks
 
 - Issue: none (report-only)
-- PR: pending
-- Base `main` `e3ee22887f497bbad3f268b535dd21c3cdbbbc0a` / head `bughunter/20261109T165738Z-d023892e61964939a0a257258e493a08-ember`
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/85
+- Base `main` `e3ee22887f497bbad3f268b535dd21c3cdbbbc0a` / head `bughunter/20261109T165738Z-d023892e61964939a0a257258e493a08-ember` `9e5069fad55c13f2dace419d483823b7d80a030a` (pre-timing-amend)
 - `closingIssuesReferences`: none
+- Mergeable at first read-back: MERGEABLE; assignees none (repo unmapped; no guessed owner)
+- Checks at first PR read-back: GitGuardian pass; CI Lint/Test queued; Workers Builds in progress
 - Local tests **NOT RUN BY BUGHUNTER**
