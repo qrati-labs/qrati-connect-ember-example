@@ -111,7 +111,7 @@ export default class QratiDemo extends Component {
               href="https://qrati.com"
               target="_blank"
               rel="noopener noreferrer"
-            >Qrati</a>
+            >Qrati<span class="sr-only"> (opens in a new tab)</span></a>
             Connect inside an Ember host site
           </h1>
           <p class="hero-copy">
@@ -120,7 +120,7 @@ export default class QratiDemo extends Component {
               href="https://qrati.com"
               target="_blank"
               rel="noopener noreferrer"
-            >Qrati</a>
+            >Qrati<span class="sr-only"> (opens in a new tab)</span></a>
             Connect into an Ember app using the no-code
             <strong>embed script</strong>, with a host-controlled theme.
           </p>
@@ -136,7 +136,7 @@ export default class QratiDemo extends Component {
                   fill="currentColor"
                   d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
                 /></svg>
-              <span>View on GitHub</span>
+              <span>View on GitHub</span><span class="sr-only"> (opens in a new tab)</span>
             </a>
             <a
               href={{this.vscodeUrl}}
@@ -153,7 +153,7 @@ export default class QratiDemo extends Component {
                   fill="currentColor"
                   d="M10.863 13.919a.8.8 0 0 1-.644.025a.8.8 0 0 1-.279-.183L4.816 9.063l-2.232 1.703a.54.54 0 0 1-.691-.031l-.716-.655a.546.546 0 0 1 0-.805L3.112 7.5L1.177 5.725a.546.546 0 0 1 0-.805l.716-.655a.54.54 0 0 1 .691-.031l2.232 1.703L9.94 1.239a.805.805 0 0 1 .923-.159l2.677 1.295c.281.136.46.422.46.736V8h-3.248V4.534L6.864 7.5l3.888 2.966V8H14v3.889c0 .314-.179.6-.46.736z"
                 /></svg>
-              <span>Open in VS Code</span>
+              <span>Open in VS Code</span><span class="sr-only"> (opens in a new tab)</span>
             </a>
           </div>
         </header>
@@ -187,22 +187,22 @@ export default class QratiDemo extends Component {
                 href="https://qrati.com"
                 target="_blank"
                 rel="noopener noreferrer"
-              >qrati.com</a>
+              >qrati.com<span class="sr-only"> (opens in a new tab)</span></a>
               <a
                 href="https://www.npmjs.com/package/@qratilabs/qrati-connect"
                 target="_blank"
                 rel="noopener noreferrer"
-              >npm</a>
+              >npm<span class="sr-only"> (opens in a new tab)</span></a>
               <a
                 href="https://github.com/qrati-labs"
                 target="_blank"
                 rel="noopener noreferrer"
-              >GitHub</a>
+              >GitHub<span class="sr-only"> (opens in a new tab)</span></a>
               <a
                 href="https://qrati.com/pricing"
                 target="_blank"
                 rel="noopener noreferrer"
-              >Pricing</a>
+              >Pricing<span class="sr-only"> (opens in a new tab)</span></a>
               <button
                 type="button"
                 class="footer-cookie-btn"
