@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-10 — Ember host WCAG 2.4.13 focus appearance](reports/20261110T182838Z-ember-focus-appearance.md) — report-only; no confirmed defect.
+
 - [2026-11-10 — Ember host Label in Name (remaining controls)](reports/20261110T180538Z-ember-label-in-name-remaining.md) — report-only; no confirmed defect.
 
 - [2026-11-10 — Ember host theme toggle persist and embed theme sync](reports/20261110T174238Z-ember-theme-toggle-embed-sync.md) — report-only; no confirmed defect.
