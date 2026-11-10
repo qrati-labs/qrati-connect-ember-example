@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-10 — Ember host WCAG 1.2.8 media alternative (prerecorded)](reports/20261110T154838Z-ember-media-alternative-prerecorded.md) — report-only; no confirmed defect.
+
 - [2026-11-10 — Ember host WCAG 1.2.7 extended audio description (prerecorded)](reports/20261110T152838Z-ember-extended-audio-description-prerecorded.md) — report-only; no confirmed defect.
 
 - [2026-11-10 — Ember host WCAG 1.2.6 sign language (prerecorded)](reports/20261110T150838Z-ember-sign-language-prerecorded.md) — report-only; no confirmed defect.
