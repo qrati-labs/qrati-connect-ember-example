@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-10 — Ember host WCAG 1.4.2 audio control](reports/20261110T124338Z-ember-audio-control.md) — report-only; no confirmed defect.
+
 - [2026-11-10 — Ember host WCAG 3.3.7 redundant entry](reports/20261110T122338Z-ember-redundant-entry.md) — report-only; no confirmed defect.
 
 - [2026-11-10 — Ember host WCAG 3.3.8 accessible authentication](reports/20261110T120238Z-ember-accessible-authentication.md) — report-only; no confirmed defect.
