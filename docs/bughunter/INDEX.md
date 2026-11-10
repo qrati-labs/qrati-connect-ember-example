@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-10 — Ember host theme toggle persist and embed theme sync](reports/20261110T174238Z-ember-theme-toggle-embed-sync.md) — report-only; no confirmed defect.
+
 - [2026-11-10 — Ember cookie-consent gtag Arguments vs rest array](reports/20261110T171938Z-ember-gtag-arguments.md) — P2 confirmed; `dataLayer.push(arguments)`; issue [#138](https://github.com/qrati-labs/qrati-connect-ember-example/issues/138).
 
 - [2026-11-10 — Ember host WCAG 1.2.9 audio-only (live)](reports/20261110T163238Z-ember-audio-only-live.md) — report-only; no confirmed defect.
