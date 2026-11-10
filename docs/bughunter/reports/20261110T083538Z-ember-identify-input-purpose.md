@@ -65,4 +65,12 @@ CodeGraph unindexed. No live session on `https://qrati.com/connect/ember-example
 
 Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30). Copied from the timer ledger after `finish`.
 
-TIMING_TABLE_PLACEHOLDER
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-10T08:35:38Z | 2026-11-10T08:36:00Z | 14:05:38 | 14:06:00 | 00:00:22 (0.4 min) |
+| `audit` | 2026-11-10T08:36:36Z | 2026-11-10T08:38:22Z | 14:06:36 | 14:08:22 | 00:01:46 (1.8 min) |
+| `delivery` | 2026-11-10T08:38:22Z | 2026-11-10T08:39:07Z | 14:08:22 | 14:09:07 | 00:00:46 (0.8 min) |
+| **Total run (preflight start to finish)** | 2026-11-10T08:35:38Z | 2026-11-10T08:39:07Z | 14:05:38 | 14:09:07 | **00:03:29 (3.5 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:36 (0.6 min) |
+
+Timer record: `/home/hermes/.hermes/cache/scratch/bughunter-timing/20261110T083538Z-e99f725199364214ba92b05ff3719b24.json`. Timing-table insertion itself occurs after this measurement snapshot. Merge of this example PR is after `finish` and is not in the measured elapsed time.
