@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-10 — Ember host WCAG 3.2.6 consistent help](reports/20261110T105738Z-ember-consistent-help.md) — report-only; no confirmed defect.
+
 - [2026-11-10 — Ember host WCAG 2.4.5 multiple ways](reports/20261110T103738Z-ember-multiple-ways.md) — report-only; no confirmed defect.
 
 - [2026-11-10 — Ember host WCAG 1.4.5 images of text](reports/20261110T101738Z-ember-images-of-text.md) — report-only; no confirmed defect.
