@@ -60,4 +60,14 @@ CodeGraph unindexed. Sizes from authored CSS tokens at 16px root, not a computed
 
 ## Timing
 
-TIMING_PLACEHOLDER
+Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30). Copied from the timer ledger after `finish`.
+
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-10T18:49:38Z | 2026-11-10T18:50:02Z | 00:19:38 | 00:20:02 | 00:00:24 (0.4 min) |
+| `audit` | 2026-11-10T18:50:40Z | 2026-11-10T18:56:44Z | 00:20:40 | 00:26:44 | 00:06:04 (6.1 min) |
+| `delivery` | 2026-11-10T18:56:44Z | 2026-11-10T18:57:39Z | 00:26:44 | 00:27:39 | 00:00:55 (0.9 min) |
+| **Total run (preflight start to finish)** | 2026-11-10T18:49:38Z | 2026-11-10T18:57:39Z | 00:19:38 | 00:27:39 | **00:08:01 (8.0 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:39 (0.7 min) |
+
+Timer record: `/home/hermes/.hermes/cache/scratch/bughunter-timing/20261110T184938Z-f047c4ae0e1d427dade8766ef0acc07e.json`. Timing-table insertion itself occurs after this measurement snapshot. Merge of this example PR is after `finish` and is not in the measured elapsed time.
