@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-10 — Ember host WCAG 3.3.8 accessible authentication](reports/20261110T120238Z-ember-accessible-authentication.md) — report-only; no confirmed defect.
+
 - [2026-11-10 — Ember host WCAG 3.1.2 language of parts](reports/20261110T111938Z-ember-language-of-parts.md) — report-only; no confirmed defect.
 
 - [2026-11-10 — Ember host WCAG 3.2.6 consistent help](reports/20261110T105738Z-ember-consistent-help.md) — report-only; no confirmed defect.
