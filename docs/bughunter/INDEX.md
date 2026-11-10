@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-10 — Ember host WCAG 3.3.1 error identification](reports/20261110T041539Z-ember-error-identification.md) — report-only; no confirmed defect.
+
 - [2026-11-10 — Ember host WCAG 3.3.2 labels or instructions](reports/20261110T035038Z-ember-labels-or-instructions.md) — report-only; no confirmed defect.
 
 - [2026-11-10 — Ember host WCAG 3.2.4 consistent identification](reports/20261110T030638Z-ember-consistent-identification.md) — report-only; no confirmed defect.
