@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-10 — Ember host WCAG 2.5.1 pointer gestures](reports/20261110T062738Z-ember-pointer-gestures.md) — report-only; no confirmed defect.
+
 - [2026-11-10 — Ember host WCAG 2.5.2 pointer cancellation](reports/20261110T051738Z-ember-pointer-cancellation.md) — report-only; no confirmed defect.
 
 - [2026-11-10 — Ember host WCAG 3.3.4 error prevention (legal, financial, data)](reports/20261110T045638Z-ember-error-prevention.md) — report-only; no confirmed defect.
