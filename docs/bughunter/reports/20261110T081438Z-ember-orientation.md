@@ -67,3 +67,13 @@ CodeGraph unindexed. No device-rotation session on `https://qrati.com/connect/em
 ## Timing
 
 Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30). Copied from the timer ledger after `finish`.
+
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-10T08:14:38Z | 2026-11-10T08:15:02Z | 13:44:38 | 13:45:02 | 00:00:24 (0.4 min) |
+| `audit` | 2026-11-10T08:15:35Z | 2026-11-10T08:19:13Z | 13:45:35 | 13:49:13 | 00:03:39 (3.6 min) |
+| `delivery` | 2026-11-10T08:19:13Z | 2026-11-10T08:19:38Z | 13:49:13 | 13:49:38 | 00:00:24 (0.4 min) |
+| **Total run (preflight start to finish)** | 2026-11-10T08:14:38Z | 2026-11-10T08:19:38Z | 13:44:38 | 13:49:38 | **00:05:00 (5.0 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:33 (0.6 min) |
+
+Timer record: `/home/hermes/.hermes/cache/scratch/bughunter-timing/20261110T081438Z-7a7a8fd782994678ad9277d7d154ae34.json`. Timing-table insertion itself occurs after this measurement snapshot. Merge of this example PR is after `finish` and is not in the measured elapsed time.
