@@ -386,3 +386,18 @@ iconify-icon {
 .btn-cta-primary:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 .8rem 2rem #ff480055; }
 @media (max-width: 640px) { .answer-section { grid-template-columns: 1fr; padding: 1.35rem; } }
 @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; } }
+/* WCAG 2.5.5: host pointer targets at least 44×44 CSS pixels (C44). */
+.theme-toggle,
+.action-pills a,
+.faq-list summary,
+.footer nav a,
+.footer-cookie-btn {
+  box-sizing: border-box;
+  min-height: 44px;
+  min-width: 44px;
+}
+.footer nav a,
+.footer-cookie-btn {
+  display: inline-flex;
+  align-items: center;
+}
