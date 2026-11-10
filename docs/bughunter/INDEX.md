@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-10 — Ember host WCAG 1.4.1 use of color](reports/20261110T012438Z-ember-use-of-color.md) — report-only; no confirmed defect.
+
 - [2026-11-10 — Ember host WCAG 4.1.3 status messages](reports/20261110T004238Z-ember-status-messages.md) — report-only; no confirmed defect.
 
 - [2026-11-10 — Ember host WCAG 4.1.2 name, role, value](reports/20261110T000039Z-ember-name-role-value.md) — report-only; no confirmed defect.
