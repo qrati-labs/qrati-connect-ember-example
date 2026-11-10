@@ -13,8 +13,11 @@ const gtmId = import.meta.env.VITE_GTM_ID as string | undefined
 function syncGtm() {
   const analytics = CookieConsent.acceptedCategory('analytics')
   window.dataLayer = window.dataLayer || []
-  const gtag = window.gtag || ((...args: unknown[]) => window.dataLayer?.push(args))
-  window.gtag = gtag
+  // gtag.js only treats a real Arguments object as a command. Rest arrays are dropped.
+  function gtag(..._args: unknown[]) {
+    window.dataLayer!.push(arguments)
+  }
+  window.gtag = window.gtag || gtag
   gtag('consent', 'update', {
     analytics_storage: analytics ? 'granted' : 'denied',
     ad_storage: analytics ? 'granted' : 'denied',
