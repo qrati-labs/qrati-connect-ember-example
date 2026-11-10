@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-10 — Ember host FAQ disclosures](reports/20261110T204938Z-ember-faq-disclosures.md) — report-only; no confirmed defect.
+
 - [2026-11-10 — Ember host WCAG 2.5.5 target size (enhanced)](reports/20261110T202538Z-ember-target-size-enhanced.md) — P3 confirmed; 44×44 host hit boxes; issue [#148](https://github.com/qrati-labs/qrati-connect-ember-example/issues/148).
 
 - [2026-11-10 — Ember host WCAG 3.2.5 change on request](reports/20261110T200138Z-ember-change-on-request.md) — P3 confirmed; `target=_blank` new-tab indication; issue [#146](https://github.com/qrati-labs/qrati-connect-ember-example/issues/146).
