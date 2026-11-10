@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-10 — Ember host WCAG 2.4.10 section headings](reports/20261110T193838Z-ember-section-headings.md) — report-only; no confirmed defect.
+
 - [2026-11-10 — Ember host WCAG 2.5.6 concurrent input mechanisms](reports/20261110T191438Z-ember-concurrent-input.md) — report-only; no confirmed defect.
 
 - [2026-11-10 — Ember host WCAG 2.5.8 target size (remaining controls)](reports/20261110T184938Z-ember-target-size-remaining.md) — report-only; no confirmed defect.
