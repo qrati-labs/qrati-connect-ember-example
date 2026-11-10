@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-10 — Ember host WCAG 3.2.3 consistent navigation](reports/20261110T024638Z-ember-consistent-navigation.md) — report-only; no confirmed defect.
+
 - [2026-11-10 — Ember host WCAG 3.2.2 on input](reports/20261110T022738Z-ember-on-input.md) — report-only; no confirmed defect.
 
 - [2026-11-10 — Ember host WCAG 3.2.1 on focus](reports/20261110T020738Z-ember-on-focus.md) — report-only; no confirmed defect.
