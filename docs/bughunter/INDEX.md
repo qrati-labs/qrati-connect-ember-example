@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-10 — Ember host WCAG 3.2.1 on focus](reports/20261110T020738Z-ember-on-focus.md) — report-only; no confirmed defect.
+
 - [2026-11-10 — Ember host WCAG 1.4.13 content on hover or focus](reports/20261110T014539Z-ember-content-on-hover-or-focus.md) — report-only; no confirmed defect.
 
 - [2026-11-10 — Ember host WCAG 1.4.1 use of color](reports/20261110T012438Z-ember-use-of-color.md) — report-only; no confirmed defect.
