@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-10 — Ember host WCAG 3.3.4 error prevention (legal, financial, data)](reports/20261110T045638Z-ember-error-prevention.md) — report-only; no confirmed defect.
+
 - [2026-11-10 — Ember host WCAG 3.3.3 error suggestion](reports/20261110T043638Z-ember-error-suggestion.md) — report-only; no confirmed defect.
 
 - [2026-11-10 — Ember host WCAG 3.3.1 error identification](reports/20261110T041539Z-ember-error-identification.md) — report-only; no confirmed defect.
