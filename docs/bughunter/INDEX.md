@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-10 — Ember host WCAG 1.3.3 sensory characteristics](reports/20261110T085538Z-ember-sensory-characteristics.md) — report-only; no confirmed defect.
+
 - [2026-11-10 — Ember host WCAG 1.3.5 identify input purpose](reports/20261110T083538Z-ember-identify-input-purpose.md) — report-only; no confirmed defect.
 
 - [2026-11-10 — Ember host WCAG 1.3.4 orientation](reports/20261110T081438Z-ember-orientation.md) — report-only; no confirmed defect.
