@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-10 — Ember host WCAG 1.2.1 audio-only and video-only](reports/20261110T130338Z-ember-audio-video-only.md) — report-only; no confirmed defect.
+
 - [2026-11-10 — Ember host WCAG 1.4.2 audio control](reports/20261110T124338Z-ember-audio-control.md) — report-only; no confirmed defect.
 
 - [2026-11-10 — Ember host WCAG 3.3.7 redundant entry](reports/20261110T122338Z-ember-redundant-entry.md) — report-only; no confirmed defect.
