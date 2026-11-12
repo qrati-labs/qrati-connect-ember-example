@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-12 — Ember cookie-consent geo host URL selection](reports/20261112T201238Z-ember-consent-geo-host.md) — report-only; no confirmed defect.
+
 - [2026-11-12 — Ember Worker `run_worker_first` vs subpath prefix rewrite](reports/20261112T194938Z-ember-worker-run-worker-first.md) — report-only; no confirmed defect.
 
 - [2026-11-10 — Ember Worker HTML response reconstruction](reports/20261110T211438Z-ember-worker-html-response-rebuild.md) — report-only; no confirmed defect.
