@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-13 — Ember host WCAG 2.1.3 keyboard (no exception)](reports/20261113T211938Z-ember-keyboard-no-exception.md) — report-only; no confirmed defect.
+
 - [2026-11-13 — Ember host WCAG 1.4.9 images of text (no exception)](reports/20261113T210039Z-ember-images-of-text-no-exception.md) — report-only; no confirmed defect.
 
 - [2026-11-13 — Ember host WCAG 3.1.6 pronunciation](reports/20261113T204138Z-ember-pronunciation.md) — report-only; no confirmed defect.
