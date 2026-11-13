@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-13 — Ember host WCAG 3.3.5 help](reports/20261113T175438Z-ember-help.md) — report-only; no confirmed defect.
+
 - [2026-11-13 — Ember host WCAG 2.2.5 re-authenticating](reports/20261113T173338Z-ember-re-authenticating.md) — report-only; no confirmed defect.
 
 - [2026-11-13 — Ember host WCAG 2.2.6 timeouts](reports/20261113T171238Z-ember-timeouts.md) — report-only; no confirmed defect.
