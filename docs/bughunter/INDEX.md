@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-13 — Ember host WCAG 2.3.3 animation from interactions](reports/20261113T133538Z-ember-animation-from-interactions.md) — report-only; no confirmed defect.
+
 - [2026-11-13 — Ember host WCAG 2.4.9 link purpose (link only)](reports/20261113T131438Z-ember-link-purpose-link-only.md) — report-only; no confirmed defect.
 
 - [2026-11-13 — Ember host WCAG 2.4.12 focus not obscured (enhanced)](reports/20261113T125238Z-ember-focus-not-obscured-enhanced.md) — report-only; no confirmed defect.
