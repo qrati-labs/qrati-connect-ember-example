@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-13 — Ember host WCAG 2.3.2 three flashes (AAA)](reports/20261113T183638Z-ember-three-flashes-aaa.md) — report-only; no confirmed defect.
+
 - [2026-11-13 — Ember host WCAG 3.3.6 error prevention (all)](reports/20261113T181539Z-ember-error-prevention-all.md) — report-only; no confirmed defect.
 
 - [2026-11-13 — Ember host WCAG 3.3.5 help](reports/20261113T175438Z-ember-help.md) — report-only; no confirmed defect.
