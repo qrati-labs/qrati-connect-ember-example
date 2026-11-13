@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-13 — Ember host WCAG 3.1.6 pronunciation](reports/20261113T204138Z-ember-pronunciation.md) — report-only; no confirmed defect.
+
 - [2026-11-13 — Ember host WCAG 3.1.5 reading level](reports/20261113T202038Z-ember-reading-level.md) — report-only; no confirmed defect.
 
 - [2026-11-13 — Ember host WCAG 3.1.4 abbreviations (GTM)](reports/20261113T200039Z-ember-gtm-abbreviation.md) — P3 confirmed; expand GTM in cookie preferences; issue [#171](https://github.com/qrati-labs/qrati-connect-ember-example/issues/171).
