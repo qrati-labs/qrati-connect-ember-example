@@ -1,6 +1,6 @@
 # Ember host WCAG 1.4.6 contrast (enhanced)
 
-- **Scope:** WCAG 2.2 SC 1.4.6 Contrast (Enhanced) for host-authored text in `QratiDemo` and cookie-consent chrome tokens in `app/styles/app.css`. Same pairings as the 1.4.3 audit: `--page-text`, `--page-heading`, `--page-muted`, `--brand-accent`, `--footer-muted`, `--pill-text`, `--theme-toggle-color`, CTA/consent button labels, `.seo-kicker`, hero accent links. Excludes 1.4.3 AA (20261109T214938Z, closed #18/#22/#24), 1.4.11 non-text (20261109T181138Z), 1.4.1 use of color (20261110T012438Z), embed internals (`qrati-connect` / `embed.js`).
+- **Scope:** WCAG 2.2 SC 1.4.6 Contrast (Enhanced) for host-authored text in `QratiDemo` and cookie-consent chrome tokens in `app/styles/app.css`. Same pairings as the 1.4.3 audit: `--page-text`, `--page-heading`, `--page-muted`, `--brand-accent`, `--footer-muted`, `--pill-text`, `--theme-toggle-color`, CTA/consent button labels, `.seo-kicker`, hero accent links. Excludes 1.4.3 AA (20261109T214938Z; prior issues 18, 22, 24), 1.4.11 non-text (20261109T181138Z), 1.4.1 use of color (20261110T012438Z), embed internals (`qrati-connect` / `embed.js`).
 - **Base:** `origin/main` at `af922c2cac71882abbce6b6bdb0ed87ebfdc6813`.
 - **Worktree/branch:** `/home/hermes/.hermes/cache/scratch/bh-20261113T120438Z-ef2a39b9550947b6a348391153c4b9d4-qrati-connect-ember-example`, `bughunter/20261113T120438Z-ef2a39b9550947b6a348391153c4b9d4-ember`.
 - **Run:** `20261113T120438Z-ef2a39b9550947b6a348391153c4b9d4`.
@@ -49,10 +49,10 @@ Open PRs at selection: none (`OPEN_PR_COUNT=0`). No overlapping PR.
 
 ## Falsification
 
-- **Tokens below 7:1 are 1.4.6 failures, so file like 2.5.5 AAA:** the WG documents a 7:1 floor, but this host’s evidenced contrast contract is 1.4.3 AA (closed #18/#22/#24; 20261109T214938Z explicitly did not claim 1.4.6). Meeting AA then missing AAA is not a broken invariant. A 7:1 fix would recolor brand orange, CTA, consent primary, and footer muted — a palette change, not a narrow correction.
+- **Tokens below 7:1 are 1.4.6 failures, so file like 2.5.5 AAA:** the WG documents a 7:1 floor, but this host’s evidenced contrast contract is 1.4.3 AA (prior issues 18, 22, and 24; 20261109T214938Z explicitly did not claim 1.4.6). Meeting AA then missing AAA is not a broken invariant. A 7:1 fix would recolor brand orange, CTA, consent primary, and footer muted — a palette change, not a narrow correction.
 - **Hero accent links fail 1.4.6:** `h1` is large-scale; 4.90:1 meets the AAA large-text floor. `.hero-copy a` is normal text at 4.90:1 and would fail 7:1 if AAA were in contract.
 - **`--footer-muted` 4.56:1 already failed 1.4.3:** contradicted by 20261109T214938Z (**4.56:1 ≥ 4.5:1**).
-- **Issue search** `1.4.6 OR "contrast enhanced" OR footer-muted OR AAA contrast`: no matching issue (open set empty). Closed contrast hits are 1.4.3 component fixes (#18/#22/#24) and 1.4.1 (#49). No issue created (report-only).
+- **Issue search** `1.4.6 OR "contrast enhanced" OR footer-muted OR AAA contrast`: no matching issue (open set empty). Prior contrast hits are 1.4.3 component fixes (issues 18, 22, 24) and 1.4.1 (issue 49). No issue created (report-only).
 
 ## Disposition
 
@@ -70,7 +70,7 @@ None authored (no confirmed defect). `pnpm test` **NOT RUN BY BUGHUNTER**. Patch
 - [WCAG 2.2 SC 1.4.6](https://www.w3.org/TR/WCAG22/#contrast-enhanced)
 - `app/styles/app.css`
 - `app/components/qrati-demo.gts`
-- Prior: 1.4.3 remaining text (20261109T214938Z); CTA/consent/kicker 1.4.3 (#18/#22/#24)
+- Prior: 1.4.3 remaining text (20261109T214938Z); CTA/consent/kicker 1.4.3 (issues 18, 22, 24)
 
 ## Limitations
 
@@ -80,13 +80,22 @@ CodeGraph unindexed. Ratios from source tokens + sRGB relative luminance (`pytho
 
 Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30). Copied from the timer ledger after `finish`.
 
-TIMING_TABLE_PLACEHOLDER
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-13T12:04:38Z | 2026-11-13T12:05:00Z | 17:34:38 | 17:35:00 | 00:00:22 (0.4 min) |
+| `audit` | 2026-11-13T12:05:24Z | 2026-11-13T12:10:43Z | 17:35:24 | 17:40:43 | 00:05:19 (5.3 min) |
+| `delivery` | 2026-11-13T12:10:43Z | 2026-11-13T12:11:51Z | 17:40:43 | 17:41:51 | 00:01:08 (1.1 min) |
+| **Total run (preflight start to finish)** | 2026-11-13T12:04:38Z | 2026-11-13T12:11:51Z | 17:34:38 | 17:41:51 | **00:07:13 (7.2 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:24 (0.4 min) |
 
-Timer record: `/home/hermes/.hermes/cache/scratch/bughunter-timing/20261113T120438Z-ef2a39b9550947b6a348391153c4b9d4.json`.
+Timer record: `/home/hermes/.hermes/cache/scratch/bughunter-timing/20261113T120438Z-ef2a39b9550947b6a348391153c4b9d4.json`. Timing-table insertion itself occurs after this measurement snapshot. Merge of this example PR is after `finish` and is not in the measured elapsed time.
 
 ## PR / checks
 
 - Issue: none (report-only)
-- PR: pending delivery
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/154
+- Base `main` `af922c2cac71882abbce6b6bdb0ed87ebfdc6813` / head `bughunter/20261113T120438Z-ef2a39b9550947b6a348391153c4b9d4-ember`
 - `closingIssuesReferences`: none
+- Mergeable at first read-back: MERGEABLE; assignees none (repo unmapped; no guessed owner)
+- Checks at first PR read-back: GitGuardian IN_PROGRESS; CI Lint/Test QUEUED
 - Local tests **NOT RUN BY BUGHUNTER**
