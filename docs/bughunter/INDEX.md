@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-13 — Ember host WCAG 2.4.8 location](reports/20261113T141838Z-ember-location.md) — report-only; no confirmed defect.
+
 - [2026-11-13 — Ember host WCAG 1.4.8 visual presentation](reports/20261113T135638Z-ember-visual-presentation.md) — report-only; no confirmed defect.
 
 - [2026-11-13 — Ember host WCAG 2.3.3 animation from interactions](reports/20261113T133538Z-ember-animation-from-interactions.md) — report-only; no confirmed defect.
