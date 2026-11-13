@@ -68,6 +68,14 @@ CodeGraph unindexed. No browser session of the Ember host. vanilla-cookieconsent
 
 Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30). Copied from the timer ledger after `finish`.
 
-TIMING_TABLE_PLACEHOLDER
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-13T18:15:39Z | 2026-11-13T18:16:04Z | 23:45:39 | 23:46:04 | 00:00:25 (0.4 min) |
+| `audit` | 2026-11-13T18:16:29Z | 2026-11-13T18:20:16Z | 23:46:29 | 23:50:16 | 00:03:47 (3.8 min) |
+| `delivery` | 2026-11-13T18:20:05Z | 2026-11-13T18:20:39Z | 23:50:05 | 23:50:39 | 00:00:34 (0.6 min) |
+| **Total run (preflight start to finish)** | 2026-11-13T18:15:39Z | 2026-11-13T18:20:39Z | 23:45:39 | 23:50:39 | **00:05:00 (5.0 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:14 (0.2 min) |
 
 Timer record: `/home/hermes/.hermes/cache/scratch/bughunter-timing/20261113T181539Z-f686a58a4cdc4ebfb69757dac02ab37b.json`. Timing-table insertion itself occurs after this measurement snapshot. Merge of this example PR is after `finish` and is not in the measured elapsed time.
+
+Audit and delivery overlap 11s (`delivery` started before `audit` closed); unclassified is total minus summed phase elapsed.
