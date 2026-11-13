@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-13 — Ember cookie-consent first-layer WCAG 2.4.7 focus visible](reports/20261113T224738Z-ember-consent-focus-visible.md) — report-only; no confirmed defect.
+
 - [2026-11-13 — Ember host WCAG 2.4.7 focus visible (FAQ summary)](reports/20261113T222138Z-ember-faq-summary-focus-visible.md) — report-only; no confirmed defect.
 
 - [2026-11-13 — Ember host WCAG 3.3.9 accessible authentication (enhanced)](reports/20261113T214038Z-ember-accessible-authentication-enhanced.md) — report-only; no confirmed defect.
