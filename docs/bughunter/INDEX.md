@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-13 — Ember host WCAG 2.2.4 interruptions](reports/20261113T165038Z-ember-interruptions.md) — report-only; no confirmed defect.
+
 - [2026-11-13 — Ember host WCAG 1.3.6 identify purpose](reports/20261113T162938Z-ember-identify-purpose.md) — report-only; no confirmed defect.
 
 - [2026-11-13 — Ember Worker prefix rewrite vs Cloudflare `assets.base_path`](reports/20261113T160738Z-ember-assets-base-path.md) — report-only; no confirmed defect.
