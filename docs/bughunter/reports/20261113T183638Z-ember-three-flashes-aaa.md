@@ -68,6 +68,23 @@ CodeGraph unindexed. No browser session of the Ember host. vanilla-cookieconsent
 
 Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30). Copied from the timer ledger after `finish`.
 
-TIMING_TABLE_PLACEHOLDER
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-13T18:36:38Z | 2026-11-13T18:37:01Z | 00:06:38 | 00:07:01 | 00:00:23 (0.4 min) |
+| `audit` | 2026-11-13T18:37:28Z | 2026-11-13T18:40:00Z | 00:07:28 | 00:10:00 | 00:02:32 (2.5 min) |
+| `delivery` | 2026-11-13T18:40:00Z | 2026-11-13T18:40:34Z | 00:10:00 | 00:10:34 | 00:00:34 (0.6 min) |
+| **Total run (preflight start to finish)** | 2026-11-13T18:36:38Z | 2026-11-13T18:40:34Z | 00:06:38 | 00:10:34 | **00:03:56 (3.9 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:27 (0.5 min) |
 
 Timer record: `/home/hermes/.hermes/cache/scratch/bughunter-timing/20261113T183638Z-525612f376ea4a2c9def091eaf2e6645.json`. Timing-table insertion itself occurs after this measurement snapshot. Merge of this example PR is after `finish` and is not in the measured elapsed time.
+
+IST dates for the table are 2026-11-14 (UTC+05:30). Unclassified is total minus summed phase elapsed.
+
+## PR / checks
+
+- Issue: none (report-only)
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/168
+- Base `main` `79f2b366034c2d64dcb9073f67a6d5b8b1bf0cfe` / head `bughunter/20261113T183638Z-525612f376ea4a2c9def091eaf2e6645-ember`
+- `closingIssuesReferences`: none
+- Assignees: none (example repo unmapped in ownership.html; do not guess)
+- Checks at open: none reported (`statusCheckRollup` empty)
