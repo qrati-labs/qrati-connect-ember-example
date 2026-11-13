@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-13 — Ember Worker prefix rewrite vs Cloudflare `assets.base_path`](reports/20261113T160738Z-ember-assets-base-path.md) — report-only; no confirmed defect.
+
 - [2026-11-13 — Ember host WCAG 2.2.3 no timing](reports/20261113T144038Z-ember-no-timing.md) — report-only; no confirmed defect.
 
 - [2026-11-13 — Ember host WCAG 2.4.8 location](reports/20261113T141838Z-ember-location.md) — report-only; no confirmed defect.
