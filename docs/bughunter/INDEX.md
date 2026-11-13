@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-13 — Ember host WCAG 3.1.4 abbreviations (GTM)](reports/20261113T200039Z-ember-gtm-abbreviation.md) — P3 confirmed; expand GTM in cookie preferences; issue [#171](https://github.com/qrati-labs/qrati-connect-ember-example/issues/171).
+
 - [2026-11-13 — Ember host WCAG 3.1.3 unusual words](reports/20261113T192038Z-ember-unusual-words.md) — report-only; no confirmed defect.
 
 - [2026-11-13 — Ember host WCAG 1.4.7 low or no background audio](reports/20261113T185638Z-ember-low-or-no-background-audio.md) — report-only; no confirmed defect.
