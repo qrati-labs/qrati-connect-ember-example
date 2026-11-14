@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-14 — Ember host JS-disabled (`noscript`) fallback](reports/20261114T023538Z-ember-noscript-fallback.md) — report-only; no confirmed defect.
+
 - [2026-11-14 — Ember host color-scheme meta vs CSS data-theme](reports/20261114T014938Z-ember-color-scheme-meta.md) — report-only; no confirmed defect.
 
 - [2026-11-14 — Ember live gallery embed CDN resource hints](reports/20261114T012638Z-ember-embed-cdn-preconnect.md) — report-only; no confirmed defect.
