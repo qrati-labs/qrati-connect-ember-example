@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-14 — Ember WarpDrive legacy store vs unused gallery-host data plane](reports/20261114T080638Z-ember-warp-drive-store.md) — report-only; no confirmed defect.
+
 - [2026-11-14 — Ember Application.create vs loadInitializers / compat-modules resolver](reports/20261114T074438Z-ember-application-create.md) — report-only; no confirmed defect.
 
 - [2026-11-14 — Ember config-meta-loader vs content-for head environment config](reports/20261114T072338Z-ember-config-meta-loader.md) — report-only; no confirmed defect.
