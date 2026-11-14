@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-14 — Ember live gallery embed CDN resource hints](reports/20261114T012638Z-ember-embed-cdn-preconnect.md) — report-only; no confirmed defect.
+
 - [2026-11-14 — Ember host print rendering vs dark theme](reports/20261114T010438Z-ember-host-print.md) — report-only; no confirmed defect.
 
 - [2026-11-14 — Ember cookie-consent preferences-modal WCAG 2.4.7 focus visible](reports/20261114T001838Z-ember-consent-preferences-focus-visible.md) — report-only; no confirmed defect.
