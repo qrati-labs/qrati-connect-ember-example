@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-14 — Ember Worker prefix rewrite vs ASSETS not_found_handling](reports/20261114T045238Z-ember-not-found-handling.md) — report-only; no confirmed defect.
+
 - [2026-11-14 — Ember Worker prefix rewrite vs ASSETS html_handling redirects](reports/20261114T034438Z-ember-html-handling-redirect.md) — report-only; no confirmed defect.
 
 - [2026-11-14 — Ember footer brand image reserved size](reports/20261114T032138Z-ember-footer-logo-reserved-size.md) — report-only; no confirmed defect.
