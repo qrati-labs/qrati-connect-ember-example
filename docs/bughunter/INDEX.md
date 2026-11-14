@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-14 — Ember Application.create vs loadInitializers / compat-modules resolver](reports/20261114T074438Z-ember-application-create.md) — report-only; no confirmed defect.
+
 - [2026-11-14 — Ember config-meta-loader vs content-for head environment config](reports/20261114T072338Z-ember-config-meta-loader.md) — report-only; no confirmed defect.
 
 - [2026-11-14 — Ember Vite configTargets() vs config/targets.js](reports/20261114T070338Z-ember-config-targets.md) — report-only; no confirmed defect.
