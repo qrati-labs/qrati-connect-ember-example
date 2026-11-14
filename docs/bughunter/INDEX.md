@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-14 — Ember Vite configTargets() vs config/targets.js](reports/20261114T070338Z-ember-config-targets.md) — report-only; no confirmed defect.
+
 - [2026-11-14 — Ember Vite scripts() virtual vendor.js/css URL prefixing](reports/20261114T061838Z-ember-virtual-vendor-urls.md) — report-only; no confirmed defect.
 
 - [2026-11-14 — Ember Vite content-for host document assembly](reports/20261114T051338Z-ember-content-for.md) — report-only; no confirmed defect.
