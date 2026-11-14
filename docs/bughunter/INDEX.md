@@ -1,5 +1,7 @@
 # BugHunter reports
 
+- [2026-11-14 — Ember Vite content-for host document assembly](reports/20261114T051338Z-ember-content-for.md) — report-only; no confirmed defect.
+
 - [2026-11-14 — Ember Worker prefix rewrite vs ASSETS not_found_handling](reports/20261114T045238Z-ember-not-found-handling.md) — report-only; no confirmed defect.
 
 - [2026-11-14 — Ember Worker prefix rewrite vs ASSETS html_handling redirects](reports/20261114T034438Z-ember-html-handling-redirect.md) — report-only; no confirmed defect.
