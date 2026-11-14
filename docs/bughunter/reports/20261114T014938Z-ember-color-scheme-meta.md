@@ -59,8 +59,24 @@ CodeGraph unindexed. No browser session; public example URL historically 404 (de
 
 ## Timing
 
-TIMING_TABLE_PLACEHOLDER
+Measured wall-clock from `bughunter-timing.py` (IST = UTC+05:30). Copied from the timer ledger after `finish`.
+
+| Phase | Segment start (UTC) | Segment end (UTC) | Start (IST) | End (IST) | Elapsed |
+|---|---|---|---|---|---|
+| `preflight` | 2026-11-14T01:49:38Z | 2026-11-14T01:50:01Z | 07:19:38 | 07:20:01 | 00:00:23 (0.4 min) |
+| `audit` | 2026-11-14T01:50:25Z | 2026-11-14T01:55:57Z | 07:20:25 | 07:25:57 | 00:05:33 (5.5 min) |
+| `delivery` | 2026-11-14T01:55:58Z | 2026-11-14T01:56:56Z | 07:25:58 | 07:26:56 | 00:00:58 (1.0 min) |
+| **Total run (preflight start to finish)** | 2026-11-14T01:49:38Z | 2026-11-14T01:56:56Z | 07:19:38 | 07:26:56 | **00:07:18 (7.3 min)** |
+| Unclassified interval between marked phases | — | — | — | — | 00:00:24 (0.4 min) |
+
+Timer record: `/home/hermes/.hermes/cache/scratch/bughunter-timing/20261114T014938Z-e0c08d36ab7c414c8b66ecf4db0f708e.json`. Timing-table insertion itself occurs after this measurement snapshot. Merge of this example PR is after `finish` and is not in the measured elapsed time.
 
 ## PR / checks
 
-PR_PLACEHOLDER
+- Issue: none (report-only)
+- PR: https://github.com/qrati-labs/qrati-connect-ember-example/pull/184
+- Base `main` `4013fa83231f8f1e031d948c73164c7bf6190a73` / head `bughunter/20261114T014938Z-e0c08d36ab7c414c8b66ecf4db0f708e-ember-embed`
+- `closingIssuesReferences`: none
+- Mergeable; assignees none (repo unmapped; no guessed owner)
+- Checks at first read-back: GitGuardian pending; CI Lint pending; CI Test pending; Workers Builds pending
+- Local tests **NOT RUN BY BUGHUNTER**
