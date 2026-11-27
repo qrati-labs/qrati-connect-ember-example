@@ -4,7 +4,7 @@ allowBuilds:
 
 overrides:
   esbuild: '>=0.28.1'
-  send: '>=0.19.0'
+  send@<0.19.0: ^0.19.2
   shell-quote: '>=1.9.0'
   tmp: '>=0.2.6'
   uuid: '>=11.1.1'
